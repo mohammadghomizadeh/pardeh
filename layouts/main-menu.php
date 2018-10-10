@@ -152,6 +152,9 @@
                                 </ul>
                             </li>
                             <li class=" menu__item">
+                                <a class="menu__link irsans16" href="about.html">اخبار سایت</a>
+                            </li>
+                            <li class=" menu__item">
                                 <a class="menu__link irsans16" href="about.html">درباره ما</a>
                             </li>
                             <li class=" menu__item">

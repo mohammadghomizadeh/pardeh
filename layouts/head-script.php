@@ -12,6 +12,10 @@
     <!--//tags -->
     <link href="_Content/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
     <link href="_Content/css/bootstrap-rtl.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="_Content/css/jquery-ui.css" rel="stylesheet" type="text/css">
+    <link href="_Content/css/jquery.ui.slider-rtl.css" type="text/css" rel="stylesheet">
+    <link href="_Content/css/flexslider.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="_Content/css/team.css" rel="stylesheet" type="text/css" media="all" />
     <link href="_Content/css/style.css" rel="stylesheet" type="text/css" />
     <link href="_Content/css/font-awesome.css" rel="stylesheet">
     <link href="_Content/css/easy-responsive-tabs.css" rel='stylesheet' type='text/css' />
