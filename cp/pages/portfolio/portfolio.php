@@ -94,16 +94,7 @@
                                 </a>
                             </td>
                         </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-
-                            <td><b>Total</b></td>
-                            <td><b>$101.31</b></td>
-                            <td></td>
-                        </tr>
+              
                         <tr>
                             <td></td>
                             <td></td>
@@ -119,3 +110,17 @@
         </div>
     </div>
 </div>
+<nav aria-label="Page navigation mb-3">
+                                    <ul class="pagination justify-content-center">
+                                        <li class="page-item"><a class="page-link" href="#" aria-label="Previous">«</a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item active"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Next">»</a>
+                                        </li>
+                                    </ul>
+                                </nav>

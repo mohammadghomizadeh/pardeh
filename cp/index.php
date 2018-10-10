@@ -5,8 +5,6 @@
 <!-- ////////////////////////////////////////////////////////////////////////////-->
 <div class="wrapper">
 
-
-
         <?php include('layouts/menu.php'); ?>
 
 
@@ -20,13 +18,22 @@
                         <!--4top-->
                         <?php include('layouts/4topmenu.php'); ?>
                     <!--Line with Area Chart 1 Starts-->
-
+                    <?php
+if(isset($_GET['page']) && !empty($_GET['page']))
+{
+    $page = $_GET['page'];
+    include('pages/'. $page . '.php');
+}else
+{
+?>
                     <!--Start-Main-Admin-Content-->
                  <?PHP include('layouts/home.php'); ?>
                     <!--End-Main-Admin-Cotent-->
                 </div>
             </div>
-
+<?php
+}
+?>
             <footer class="footer footer-static footer-light">
                 <p class="clearfix text-muted text-sm-center px-2"><span>Copyright  &copy; 2018 <a href="../../../marketplace.envato.com/indexbf7d.html?ref=pixinvent" id="pixinventLink" target="_blank" class="text-bold-800 primary darken-2">PIXINVENT </a>, All rights reserved. </span></p>
             </footer>

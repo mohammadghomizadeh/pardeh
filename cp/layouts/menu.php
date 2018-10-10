@@ -29,19 +29,19 @@
                     </a>
 
                 </li>
-                <!-------------------portfailo------------------>
+                <!-------------------portfolio------------------>
                 <li class="has-sub is-shown"><a href="#" class="menu-item">نمونه کارها</a>
                             <ul class="menu-content" style="">
-                                <li class=""><a href="basic-forms.html" class="menu-item"> افزودن نمونه کار  </a>
+                                <li class=""><a href="index.php?page=portfolio/add-portfolio" class="menu-item"> افزودن نمونه کار  </a>
                                 </li>
-                                <li class=""><a href="horizontal-forms.html" class="menu-item"> لیست نمونه کار </a>
+                                <li class=""><a href="index.php?page=portfolio/portfolio" class="menu-item"> لیست نمونه کار </a>
                                 </li>
                                 <li class=""><a href="hidden-labels.html" class="menu-item"> دسته بندی نمونه کار</a>
                                 </li>
                                
                             </ul>
                         </li>
-               <!-------------------end-portfailo------------------>
+               <!-------------------end-portfolio------------------>
                 <!-------------------news------------------>
                        <li class="has-sub is-shown"><a href="#" class="menu-item">اخبار </a>
                             <ul class="menu-content" style="">
