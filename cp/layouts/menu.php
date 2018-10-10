@@ -29,6 +29,46 @@
                     </a>
 
                 </li>
+                <!-------------------portfailo------------------>
+                <li class="has-sub is-shown"><a href="#" class="menu-item">نمونه کارها</a>
+                            <ul class="menu-content" style="">
+                                <li class=""><a href="basic-forms.html" class="menu-item"> افزودن نمونه کار  </a>
+                                </li>
+                                <li class=""><a href="horizontal-forms.html" class="menu-item"> لیست نمونه کار </a>
+                                </li>
+                                <li class=""><a href="hidden-labels.html" class="menu-item"> دسته بندی نمونه کار</a>
+                                </li>
+                               
+                            </ul>
+                        </li>
+               <!-------------------end-portfailo------------------>
+                <!-------------------news------------------>
+                       <li class="has-sub is-shown"><a href="#" class="menu-item">اخبار </a>
+                            <ul class="menu-content" style="">
+                                <li class=""><a href="basic-forms.html" class="menu-item"> افزودن اخبار   </a>
+                                </li>
+                                <li class=""><a href="horizontal-forms.html" class="menu-item"> لیست  اخبار </a>
+                                </li>
+                                <li class=""><a href="hidden-labels.html" class="menu-item"> دسته بندی  احبار</a>
+                                </li>
+                               
+                            </ul>
+                        </li>
+               <!-------------------end-news------------------>
+               <!-------------------article------------------>
+               <li class="has-sub is-shown"><a href="#" class="menu-item">مقاله </a>
+                            <ul class="menu-content" style="">
+                                <li class=""><a href="basic-forms.html" class="menu-item"> افزودن مقاله   </a>
+                                </li>
+                                <li class=""><a href="horizontal-forms.html" class="menu-item"> لیست  مقاله </a>
+                                </li>
+                                <li class=""><a href="hidden-labels.html" class="menu-item"> دسته بندی  مقاله</a>
+                                </li>
+                               
+                            </ul>
+                        </li>
+               <!-------------------end-article------------------>
+
             </ul>
         </div>
         <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;"><div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; right: 239px;"><div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></div>
