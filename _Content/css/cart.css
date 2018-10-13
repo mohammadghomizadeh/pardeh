@@ -1,0 +1,127 @@
+.cartshop{
+  margin:50px;
+
+}
+.cartshop table tr th{
+  text-align:center;
+  background-color:#00A5D6;
+  border : 5px solid #00A5D6;
+  border-right : 1px solid #fff;
+  padding:0;
+  color:#fff;
+
+}
+.cartshop table{
+  text-align:center;
+  border-collapse:collapse;
+  border-collapse:separate;
+  border-spacing: 0px 5px ; /*note: border-spacing applies horizontal values BEFORE vertical! - mental, I know*/
+  margin : 20px;
+}
+.cartshop table td{
+  text-align : center;
+  border: 1px solid #00A5D6;
+  background:#fff;
+  color:#00A5D6;
+  padding:3px 10px;
+}
+.cartshop table td span{
+  color:green;
+}
+.cartshop table td input{
+  background:#EDD63E;
+  border:none;
+  padding:10px 15px;
+  color:#000000;
+}
+.cartshop table .btndel{
+  border:none;
+  background:transparent;
+}
+.cartshop table .btndel i{
+  color:red;
+}
+#tbltotal .btninput td{
+  border:none;
+}
+
+
+
+/*-------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#grid * {
+  direction:ltr !important;
+  ;
+  padding:0;
+  border:0 none;
+}
+table#grid {
+  width : 700px;
+  background-color:#fff;
+  border-collapse:separate;
+  border-spacing: 0px 5px ; /*note: border-spacing applies horizontal values BEFORE vertical! - mental, I know*/
+  margin : 20px;
+  color:#fff;
+  padding:0;
+  font: 12px "Century Gothic", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  text-transform:uppercase
+}
+
+#grid thead th {
+  background-color:#00A5D6;
+  text-align : center;
+  font-size:10px;
+  border : 5px solid #00A5D6;
+  border-right : 1px solid #fff;
+  padding:0
+}
+#grid td {
+  text-align : center;
+  border-bottom: 1px solid #00A5D6;
+  border-top: 1px solid #00A5D6;
+  background:#00A5D6 url(block.png) right center no-repeat;
+  color:#00A5D6;
+  padding:3px 10px;
+}
+#grid td.first {
+  border-left: 1px solid #00A5D6;
+  font-weight:700;
+  vertical-align:text-top;
+  text-align : left;
+  font-size:14px
+}
+#grid td img{
+  vertical-align:middle;
+  margin:2px 2em 2px 1em;
+}
+#grid td.last {
+  border-right:1px #00A5D6 solid;
+  background:#fff;
+  background-image:none
+}
+
+#grid th.last {
+  border-right:0 none;
+  text-align:center
+}
+#grid th.first {
+  text-align:left
+}

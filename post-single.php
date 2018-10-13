@@ -21,14 +21,12 @@
 	   <!--//w3_short-->
 	</div>
 </div>
-
-  <!-- banner-bootom-w3-agileits -->
+<!-- banner-bootom-w3-agileits -->
 <div class="banner-bootom-w3-agileits">
 	<div class="container">
 	     <div class="col-md-4 single-right-left ">
 			<div class="grid images_3_of_2">
 				<div class="flexslider">
-					
 					<ul class="slides">
 						<li>
 							<div class="thumb-image">
@@ -41,27 +39,11 @@
 		</div>
 		<div class="col-md-8 single-right-left simpleCart_shelfItem">
 					<h3>کفش مردانه اسپرت</h3>
-					<p><span class="item_price">۱۸۰۰۰۰ تومان</span> <del>- ۲۵۰۰۰۰</del></p>
-					<div class="rating1">
-						<span class="starRating">
-							<input id="rating5" type="radio" name="rating" value="5">
-							<label for="rating5">5</label>
-							<input id="rating4" type="radio" name="rating" value="4">
-							<label for="rating4">4</label>
-							<input id="rating3" type="radio" name="rating" value="3" checked="">
-							<label for="rating3">3</label>
-							<input id="rating2" type="radio" name="rating" value="2">
-							<label for="rating2">2</label>
-							<input id="rating1" type="radio" name="rating" value="1">
-							<label for="rating1">1</label>
-						</span>
-					</div>
+					<p>تاریخ : </p>
+
 					<div class="description">
 						<h5>با ثبت کدپستی خود، از هزینه ارسال کالا باخبر شوید.</h5>
-						 <form action="#" method="post">
-						<input type="text" placeholder="کدپستی" required="">
-						<input type="submit" value="محاسبه">
-						</form>
+
 					</div>
 
 
