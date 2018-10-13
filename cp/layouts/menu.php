@@ -29,6 +29,19 @@
                     </a>
 
                 </li>
+                <!-------------------Products------------------>
+                <li class="has-sub is-shown"><a href="#" class="menu-item">محصولات</a>
+                    <ul class="menu-content" style="">
+                        <li class=""><a href="index.php?page=product/add" class="menu-item"> محصول جدید  </a>
+                        </li>
+                        <li class=""><a href="index.php?page=product/list" class="menu-item">لیست محصولات </a>
+                        </li>
+                        <li class=""><a href="index.php?page=product/cat" class="menu-item"> دسته بندی محصولات</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <!-------------------end-Products------------------>
                 <!-------------------portfolio------------------>
                 <li class="has-sub is-shown"><a href="#" class="menu-item">نمونه کارها</a>
                             <ul class="menu-content" style="">
