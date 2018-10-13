@@ -12,29 +12,35 @@
                             <th>تصویر</th>
                             <th> نام نمونه کار</th>
                             <th>دسته نمونه کار</th>
+                            <th>تاریخ</th>
+                            <th>بازدید</th>
                             <th>ویرایش</th>
                             <th>حذف</th>
                         </tr>
                     </thead>
                     <tbody>
                     <?php
-                    
+                    include('config/db.php');
+                    $result=$db->prepare("SELECT * FROM `portfolio` ");
+                    $result->execute();
+                    foreach($result as $row){
 
                     ?>
                         <tr>
-                            <td>111</td>
-                            <td><img class="media-object round-media" src="app-assets/img/elements/01.png" alt="Generic placeholder image" style="height: 75px;"></td>
-                            <td>38.9 Ounce</td>
-                            <td>دسته محصول</td>
+                            <td><?php echo $row["id"]; ?></td>
+                            <td><img class="media-object round-media" src="upload/portfolios<?php  echo $row["image1"];?>" alt="<?php echo $row["title"] ?>" style="height: 75px;"></td>
+                            <td><?php echo $row["title"]; ?></td>
+                            <td><?php echo $row["cat_id"]; ?></td>
+                            <td><?php echo $row["creat_at"]?></td>
+                            <td><?php echo $row["view"]?></td>
                             <td>
-                                
-                            <a class="danger" data-original-title="" title="">
+                            <a class="danger" href="index.php?page=portfolio/edit&id=<?php  echo $row["id"];?>">
                                     <i class="ft-edit font-medium-3"></i>
                                 </a></td>
                             </td>
                             <td>
                             
-                            <a class="danger" data-original-title="" title="">
+                            <a class="danger" href="index.php?page=portfolio/delete&id=<?php echo $row['id'];?>">
                                     <i class="ft-trash font-medium-3"></i>
                                 </a>
                             
@@ -42,14 +48,8 @@
                                 
                             </td>
                         </tr>
-                        
+                    <?php }; ?>
                         <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
                             <td><button class="btn btn-success btn-raised">افزودن</button> </td>
                         </tr>
                     </tbody>

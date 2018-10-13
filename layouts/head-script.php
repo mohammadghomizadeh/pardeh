@@ -1,7 +1,9 @@
+<?php include('config/db.php'); ?>
 <!DOCTYPE html>
 <html>
 
 <head>
+
     <title>فروشگاه اینترنتی اریسه | خرید اینترنتی پوشاک</title>
     <!--/tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1">

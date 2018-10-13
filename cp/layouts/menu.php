@@ -32,11 +32,11 @@
                 <!-------------------portfolio------------------>
                 <li class="has-sub is-shown"><a href="#" class="menu-item">نمونه کارها</a>
                             <ul class="menu-content" style="">
-                                <li class=""><a href="index.php?page=portfolio/add-portfolio" class="menu-item"> افزودن نمونه کار  </a>
+                                <li class=""><a href="index.php?page=portfolio/add" class="menu-item"> افزودن نمونه کار  </a>
                                 </li>
-                                <li class=""><a href="index.php?page=portfolio/portfolio" class="menu-item"> لیست نمونه کار </a>
+                                <li class=""><a href="index.php?page=portfolio/list" class="menu-item"> لیست نمونه کار </a>
                                 </li>
-                                <li class=""><a href="index.php?page=portfolio/cat-portfolio" class="menu-item"> دسته بندی نمونه کار</a>
+                                <li class=""><a href="index.php?page=portfolio/catrgory" class="menu-item"> دسته بندی نمونه کار</a>
                                 </li>
                                
                             </ul>
