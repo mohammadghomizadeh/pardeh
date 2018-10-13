@@ -36,7 +36,7 @@
                                 </li>
                                 <li class=""><a href="index.php?page=portfolio/portfolio" class="menu-item"> لیست نمونه کار </a>
                                 </li>
-                                <li class=""><a href="hidden-labels.html" class="menu-item"> دسته بندی نمونه کار</a>
+                                <li class=""><a href="index.php?page=portfolio/cat-portfolio" class="menu-item"> دسته بندی نمونه کار</a>
                                 </li>
                                
                             </ul>

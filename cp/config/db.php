@@ -7,7 +7,7 @@ $PASSWORD = "4BaB5IG[lfIE";
 $DATABASE = "asantabl_phpdtl45";*/
 $USERNAME = "root";
 $PASSWORD = "";
-$DATABASE = "goli";
+$DATABASE = "parde";
 $db = new db("mysql:host=$HOST;dbname=$DATABASE", $USERNAME, $PASSWORD);
 $date = new jDateTime(true, true, 'Asia/Tehran');
 $db -> exec("SET CHARACTER SET utf8");
