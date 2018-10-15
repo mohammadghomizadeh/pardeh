@@ -16,7 +16,7 @@
 											
 											<select id="portfolio_cat_id" name="portfolio_cat_id" class="form-control">
 											<?php
-                                              include('config/db.php');
+
 											  $resultcat = $db->select("category","`type` = 'portfolio'");
 											  foreach($resultcat as $rows) {
 											?>
@@ -34,8 +34,8 @@
 												<span class="input-group-text"> تصویر اول</span>
 											</div>
 											<div class="custom-file">
-												<input class="custom-file-input" name="portfolio_image" id="portfolio_image" type="file">
-												<label class="custom-file-label" for="portfolio_image"> انتخاب فایل</label>
+												<input class="custom-file-input" name="portfolio_image1" id="portfolio_image1" type="file">
+												<label class="custom-file-label" for="portfolio_image1"> انتخاب فایل</label>
 											</div>
 										</div>
 										<div class="input-group mb-3">

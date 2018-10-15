@@ -20,18 +20,15 @@
                     </thead>
                     <tbody>
                     <?php
-                    include('config/db.php');
-                    $result=$db->prepare("SELECT * FROM `portfolio` ");
-                    $result->execute();
+                    $result=$db->select("portfolio");
                     foreach($result as $row){
-
                     ?>
                         <tr>
                             <td><?php echo $row["id"]; ?></td>
-                            <td><img class="media-object round-media" src="upload/portfolios<?php  echo $row["image1"];?>" alt="<?php echo $row["title"] ?>" style="height: 75px;"></td>
+                            <td><img class="media-object round-media" src="uploads/portfolios/<?php echo $row["image1"];?>" alt="<?php echo $row["title"] ?>" style="height: 75px;"></td>
                             <td><?php echo $row["title"]; ?></td>
                             <td><?php echo $row["cat_id"]; ?></td>
-                            <td><?php echo $row["creat_at"]?></td>
+                            <td><?php echo $row["create_at"]?></td>
                             <td><?php echo $row["view"]?></td>
                             <td>
                             <a class="danger" href="index.php?page=portfolio/edit&id=<?php  echo $row["id"];?>">

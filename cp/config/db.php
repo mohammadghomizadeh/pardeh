@@ -8,6 +8,7 @@ $DATABASE = "pardeh";
 $db = new db("mysql:host=$HOST;dbname=$DATABASE", $USERNAME, $PASSWORD);
 $date = new jDateTime(true, true, 'Asia/Tehran');
 $db -> exec("SET CHARACTER SET utf8");
+
 function substrwords($text, $maxchar, $end='...') {
     if (strlen($text) > $maxchar || $text == '') {
         $words = preg_split('/\s/', $text);

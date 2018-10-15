@@ -33,7 +33,7 @@ $result_addproduct = $db->insert("product",array
     'image3'=>$product_image3,
     'image4'=>$product_image4,
     'price'=>$product_price,
-    'category-id'=>$product_category,
+    'cat_id'=>$product_category,
     'create_at'=>$datetime
 ));
 

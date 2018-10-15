@@ -1,4 +1,4 @@
-<?php include('config/db.php'); ?>
+<?php include('cp/config/db.php'); ?>
 <!DOCTYPE html>
 <html>
 
