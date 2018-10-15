@@ -5,7 +5,7 @@ $id = $_GET['id'];
 $resultproduct = $db->select("product","`id` = '$id'");
 foreach($resultproduct as $rowedit) {
     ?>
-    <form class="form" method="POST" action="index.php?page=product/save&id=<?php echo $rowedit['id']; ?>&action=editsave" enctype="multipart/form-data">
+    <form class="form" method="POST" action="index.php?page=product/edit-save&id=<?php echo $rowedit['id']; ?>" enctype="multipart/form-data">
         <div class="form-body">
             </br></br>
             <h4 class="form-section"><i class="ft-user"></i> ویرایش محصول </h4>

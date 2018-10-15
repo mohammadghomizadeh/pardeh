@@ -2,9 +2,6 @@
 include('class.db.php');
 include('jdatetime.class.php');
 $HOST = "localhost";
-/*$USERNAME = "asantabl_phucstr";
-$PASSWORD = "4BaB5IG[lfIE";
-$DATABASE = "asantabl_phpdtl45";*/
 $USERNAME = "root";
 $PASSWORD = "";
 $DATABASE = "pardeh";

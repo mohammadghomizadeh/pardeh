@@ -4,24 +4,24 @@ $q= mysql_query("SELECT COUNT(*) FROM `view` ");
 $view=mysql_fetch_array($q);
 echo $view[0];*/
 if (isset($_POST['submit'])){
-include('config/db.php');
-$ctime = $date->date("Y-m-d", false, false);
-$utime = $date->date("Y-m-d", false, false);
-$portfolio_title=$_POST["portfolio_title"];
-$portfolio_cat_id=$_POST["portfolio_cat_id"];
-$portfolio_description=$_POST["portfolio_description"];
-/*----image1----*/
-$portfolio_img=time().$_FILES["portfolio_image"]["name"];
-$url="upload/portfolios".basename(time().$_FILES["portfolio_image"]["name"]);
-move_uploaded_file($_FILES["portfolio_image"]["tmp_name"],$url);
-/*----image2----*/
-$portfolio_img2=time().$_FILES["portfolio_image"]["name"];
-$url="upload/portfolios".basename(time().$_FILES["portfolio_image"]["name"]);
-move_uploaded_file($_FILES["portfolio_image"]["tmp_name"],$url);
-/*----image3----*/
-$portfolio_img3=time().$_FILES["portfolio_image"]["name"];
-$url="upload/portfolios".basename(time().$_FILES["portfolio_image"]["name"]);
-move_uploaded_file($_FILES["portfolio_image"]["tmp_name"],$url);
+    include('config/db.php');
+    $ctime = $date->date("Y-m-d", false, false);
+    $utime = $date->date("Y-m-d", false, false);
+    $portfolio_title=$_POST["portfolio_title"];
+    $portfolio_cat_id=$_POST["portfolio_cat_id"];
+    $portfolio_description=$_POST["portfolio_description"];
+    /*----image1----*/
+    $portfolio_img=time().$_FILES["portfolio_image"]["name"];
+    $url="upload/portfolios".basename(time().$_FILES["portfolio_image"]["name"]);
+    move_uploaded_file($_FILES["portfolio_image"]["tmp_name"],$url);
+    /*----image2----*/
+    $portfolio_img2=time().$_FILES["portfolio_image"]["name"];
+    $url="upload/portfolios".basename(time().$_FILES["portfolio_image"]["name"]);
+    move_uploaded_file($_FILES["portfolio_image"]["tmp_name"],$url);
+    /*----image3----*/
+    $portfolio_img3=time().$_FILES["portfolio_image"]["name"];
+    $url="upload/portfolios".basename(time().$_FILES["portfolio_image"]["name"]);
+    move_uploaded_file($_FILES["portfolio_image"]["tmp_name"],$url);
 
 
 

@@ -1,7 +1,7 @@
 
 
 
-<form class="form" method="POST" action="index.php?page=product/save&action=save" enctype="multipart/form-data">
+<form class="form" method="POST" action="index.php?page=product/save" enctype="multipart/form-data">
     <div class="form-body">
         </br></br>
         <h4 class="form-section"><i class="ft-user"></i> افزودن محصول جدید</h4>
