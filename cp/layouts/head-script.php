@@ -36,4 +36,5 @@ include ('config/db.php');
     <!-- END APEX CSS-->
     <!-- BEGIN Page Level CSS-->
     <!-- END Page Level CSS-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
 </head>

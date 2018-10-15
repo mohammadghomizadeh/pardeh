@@ -1,7 +1,7 @@
 <?php
-
-    try{
-
+$action = $_GET['action'];
+    if($action == "save")
+    {
         $datetime = $date->date("Y-m-d", false, false);
         $product_title = $_POST['product_title'];
         $product_description = $_POST['product_description'];
@@ -10,20 +10,20 @@
         $uploaddir = 'uploads/products/';
         /*img1*/
         $product_image1 = $datetime.$_FILES['product_image1']['name'];
-        $uploadfile = $uploaddir . basename($datetime.$_FILES['product_image1']['name']);
-        move_uploaded_file($_FILES['product_image1']['tmp_name'], $uploadfile);
+        $uploadfile1 = $uploaddir . basename($datetime.$_FILES['product_image1']['name']);
+        move_uploaded_file($_FILES['product_image1']['tmp_name'], $uploadfile1);
         /*img2*/
         $product_image2 = $datetime.$_FILES['product_image2']['name'];
-        $uploadfile = $uploaddir . basename($datetime.$_FILES['product_image2']['name']);
-        move_uploaded_file($_FILES['product_image2']['tmp_name'], $uploadfile);
+        $uploadfile2 = $uploaddir . basename($datetime.$_FILES['product_image2']['name']);
+        move_uploaded_file($_FILES['product_image2']['tmp_name'], $uploadfile2);
         /*img3*/
         $product_image3 = $datetime.$_FILES['product_image3']['name'];
-        $uploadfile = $uploaddir . basename($datetime.$_FILES['product_image3']['name']);
-        move_uploaded_file($_FILES['product_image3']['tmp_name'], $uploadfile);
+        $uploadfile3 = $uploaddir . basename($datetime.$_FILES['product_image3']['name']);
+        move_uploaded_file($_FILES['product_image3']['tmp_name'], $uploadfile3);
         /*img4*/
         $product_image4 = $datetime.$_FILES['product_image4']['name'];
-        $uploadfile = $uploaddir . basename($datetime.$_FILES['product_image4']['name']);
-        move_uploaded_file($_FILES['product_image4']['tmp_name'], $uploadfile);
+        $uploadfile4 = $uploaddir . basename($datetime.$_FILES['product_image4']['name']);
+        move_uploaded_file($_FILES['product_image4']['tmp_name'], $uploadfile4);
 
         $result_addproduct = $db->insert("product",array
         (
@@ -34,20 +34,17 @@
             'image3'=>$product_image3,
             'image4'=>$product_image4,
             'price'=>$product_price,
-            'categoryid'=>$product_category,
+            'category-id'=>$product_category,
             'create_at'=>$datetime
         ));
-
-        ?>
-<script>
-    window.location.replace("index.php?page=product/list");
-</script>
-<?php
-
-
+        if($result_addproduct) {
+            ?>
+            <script>
+                window.location.replace("index.php?page=product/list");
+            </script>
+            <?php
+        }
     }
-    catch(Exception $e)
-    {
-    echo $e;
 
-}
+    ?>
+<?php
