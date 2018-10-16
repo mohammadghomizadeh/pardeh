@@ -1,4 +1,4 @@
-<form class="form" method="POST" action="">
+<form class="form" method="POST" action="index.php?page=category/save" enctype="multipart/form-data">
     <div class="form-body">
 
         <h4 class="form-section"><i class="ft-file-text"></i> افزودن دسته بندی جدید</h4>
@@ -8,8 +8,13 @@
             <input type="text" id="category_title" class="form-control" name="category_title">
         </div>
         <div class="form-group">
-            <label for="companyName">عنوان دسته بندی</label>
-            <input type="text" id="category_title" class="form-control" name="category_title">
+            <label for="category_type">دسته بندی اصلی</label>
+            <select id="category_type" name="category_type" class="form-control">
+                <option value="product">محصولات</option>
+                <option value="portfolio">نمونه کار</option>
+                <option value="news">اخبار</option>
+                <option value="article">مقاله</option>
+            </select>
         </div>
         <div class="row">
 

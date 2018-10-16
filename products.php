@@ -81,32 +81,41 @@
 		</div>
 		<div class="clearfix"></div>
 		<div class="single-pro">
-			<div class="col-md-3 product-men">
-				<div class="men-pro-item simpleCart_shelfItem">
-					<div class="men-thumb-item">
-						<img src="_Content/images/m1.jpg" alt="" class="pro-image-front">
-						<img src="_Content/images/m1.jpg" alt="" class="pro-image-back">
-							<div class="men-cart-pro">
-								<div class="inner-men-cart-pro">
-									<a href="single.html" class="link-product-add-cart">مشاهده محصول</a>
-								</div>
-							</div>
-						<span class="product-new-top">جدید</span>					
-					</div>
-					<div class="item-info-product ">
-						<h4><a href="single.html">پیراهن رسمی مردانه</a></h4>
-						<div class="info-product-price">
-							<span class="item_price">۴۸۰۰۰ تومان</span>
-							<del>۶۵۰۰۰</del>
-						</div>
-						<div class="snipcart-details hvr-outline-out">
-							<form action="#" method="post">
-								<input type="submit" name="submit" value="افزودن به سبد خرید" class="button" />
-							</form>
-						</div>									
-					</div>
-				</div>
-			</div>
+			<!-- Product -->
+            <?php
+            $resultshowproduct = $db->select("product");
+            foreach($resultshowproduct as $rowshow) {
+                ?>
+                <div class="col-md-3 product-men">
+                    <div class="men-pro-item simpleCart_shelfItem">
+                        <div class="men-thumb-item">
+                            <img src="cp/uploads/products/<?php echo $rowshow['image1'];?>" alt="<?php echo $rowshow['title'];?>" class="pro-image-front">
+                            <img src="cp/uploads/products/<?php echo $rowshow['image2'];?>" alt="<?php echo $rowshow['title'];?>" class="pro-image-back">
+                            <div class="men-cart-pro">
+                                <div class="inner-men-cart-pro">
+                                    <a href="product-single.php?id=<?php echo $rowshow['id'];?>" class="link-product-add-cart">مشاهده محصول</a>
+                                </div>
+                            </div>
+                            <span class="product-new-top">جدید</span>
+                        </div>
+                        <div class="item-info-product ">
+                            <h4><a href="product-single.php?id=<?php echo $rowshow['id'];?>"><?php echo $rowshow['title'];?></a></h4>
+                            <div class="info-product-price">
+                                <span class="item_price"><?php echo $rowshow['price'];?></span>
+                                <del><?php echo $rowshow['price'];?></del>
+                            </div>
+                            <div class="snipcart-details hvr-outline-out">
+                                <form action="#" method="post">
+                                    <input type="submit" name="submit" value="افزودن به سبد خرید" class="button"/>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <?php
+            }
+            ?>
+            <!-- Product -->
 			<div class="col-md-3 product-men">
 				<div class="men-pro-item simpleCart_shelfItem">
 					<div class="men-thumb-item">
