@@ -81,7 +81,7 @@
 		</div>
 		<div class="clearfix"></div>
 		<div class="single-pro">
-			/*-- Product --*/
+			<!-- Product -->
             <?php
             $resultshowproduct = $db->select("product");
             foreach($resultshowproduct as $rowshow) {
@@ -115,7 +115,7 @@
                 <?php
             }
             ?>
-            /*-- EndProduct --*/
+            <!-- Product -->
 			<div class="col-md-3 product-men">
 				<div class="men-pro-item simpleCart_shelfItem">
 					<div class="men-thumb-item">
