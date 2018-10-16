@@ -11,16 +11,15 @@ if (isset($_POST['submit'])){
     $portfolio_cat_id=$_POST["portfolio_cat_id"];
     $portfolio_description=$_POST["portfolio_description"];
     /*----image1----*/
-
-    $portfolio_img1= $ctime.$_FILES["portfolio_image1"]["name"];
+    $portfolio_image1= $ctime.$_FILES["portfolio_image1"]["name"];
     $url1="uploads/portfolios/".basename($ctime.$_FILES["portfolio_image1"]["name"]);
     move_uploaded_file($_FILES["portfolio_image1"]["tmp_name"],$url1);
     /*----image2----*/
-    $portfolio_img2=$ctime.$_FILES["portfolio_image2"]["name"];
+    $portfolio_image2=$ctime.$_FILES["portfolio_image2"]["name"];
     $url2="uploads/portfolios/".basename($ctime.$_FILES["portfolio_image2"]["name"]);
     move_uploaded_file($_FILES["portfolio_image2"]["tmp_name"],$url2);
     /*----image3----*/
-    $portfolio_img3=$ctime.$_FILES["portfolio_image3"]["name"];
+    $portfolio_image3=$ctime.$_FILES["portfolio_image3"]["name"];
     $url3="uploads/portfolios/".basename($ctime.$_FILES["portfolio_image3"]["name"]);
     move_uploaded_file($_FILES["portfolio_image3"]["tmp_name"],$url3);
 
@@ -29,14 +28,14 @@ if (isset($_POST['submit'])){
 $result=$db->insert("portfolio",array(
     "title"=>$portfolio_title,
     "description"=>$portfolio_description,
-    "image1"=>$portfolio_img1,
-    "image2"=>$portfolio_img2,
-    "image3"=>$portfolio_img3,
+    "image1"=>$portfolio_image1,
+    "image2"=>$portfolio_image2,
+    "image3"=>$portfolio_image3,
     "cat_id"=>$portfolio_cat_id,
     "create_at"=>$ctime));
     if ($result){
         ?>
-
+        <script>window.location.replace("index.php?page=portfolio/list&action=list");</script>
         <?php
     }
 }

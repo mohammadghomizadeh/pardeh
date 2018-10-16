@@ -7,7 +7,10 @@
             <label for="companyName">عنوان دسته بندی</label>
             <input type="text" id="category_title" class="form-control" name="category_title">
         </div>
-
+        <div class="form-group">
+            <label for="companyName">عنوان دسته بندی</label>
+            <input type="text" id="category_title" class="form-control" name="category_title">
+        </div>
         <div class="row">
 
 
@@ -36,6 +39,9 @@
                             readURL(this);
                         });
                     </script>
+
+
+
                 </div>
             </div>
         </div>
