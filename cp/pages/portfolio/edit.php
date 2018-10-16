@@ -3,7 +3,7 @@
 				$rportfolio = $db->select("portfolio","`id` = '$id'");
 				foreach($rportfolio as $redit) {
 					?>
-                     <form class="form" method="POST" action="index.php?page=portfolio/edit" enctype="multipart/form-data">
+                     <form class="form" method="POST" action="index.php?page=portfolio/edit-save&id=<?php echo $redit['id']; ?>" enctype="multipart/form-data">
 							<div class="form-body">
                             </br></br>
 								<h4 class="form-section"><i class="ft-user"></i> افزودن نمونه کار</h4>

@@ -6,7 +6,6 @@ echo $view[0];*/
 if (isset($_POST['submit'])){
 
     $ctime = $date->date("Y-m-d", false, false);
-
     $portfolio_title=$_POST["portfolio_title"];
     $portfolio_cat_id=$_POST["portfolio_cat_id"];
     $portfolio_description=$_POST["portfolio_description"];

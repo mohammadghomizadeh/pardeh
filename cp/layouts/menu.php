@@ -46,14 +46,7 @@
                                 <li class=""><a href="index.php?page=portfolio/add" class="menu-item"> افزودن نمونه کار  </a>
                                 </li>
                                 <li class=""><a href="index.php?page=portfolio/list" class="menu-item"> لیست نمونه کار </a>
-<<<<<<< HEAD
-
-=======
                                 </li>
-                                <li class=""><a href="index.php?page=portfolio/category/add" class="menu-item"> دسته بندی نمونه کار</a>
-                                </li>
->>>>>>> 52b20ae5dc9a00a66c66ad9c54383b6e3b1807bc
-                               
                             </ul>
                         </li>
                <!-------------------end-portfolio------------------>
