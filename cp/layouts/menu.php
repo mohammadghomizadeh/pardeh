@@ -35,9 +35,7 @@
                         <li class=""><a href="index.php?page=product/add" class="menu-item"> محصول جدید  </a>
                         </li>
                         <li class=""><a href="index.php?page=product/list" class="menu-item">لیست محصولات </a>
-                        </li>
-                        <li class=""><a href="index.php?page=product/cat" class="menu-item"> دسته بندی محصولات</a>
-                        </li>
+
 
                     </ul>
                 </li>
@@ -48,9 +46,7 @@
                                 <li class=""><a href="index.php?page=portfolio/add" class="menu-item"> افزودن نمونه کار  </a>
                                 </li>
                                 <li class=""><a href="index.php?page=portfolio/list" class="menu-item"> لیست نمونه کار </a>
-                                </li>
-                                <li class=""><a href="index.php?page=portfolio/catrgory" class="menu-item"> دسته بندی نمونه کار</a>
-                                </li>
+
                                
                             </ul>
                         </li>
@@ -61,9 +57,7 @@
                                 <li class=""><a href="basic-forms.html" class="menu-item"> افزودن اخبار   </a>
                                 </li>
                                 <li class=""><a href="horizontal-forms.html" class="menu-item"> لیست  اخبار </a>
-                                </li>
-                                <li class=""><a href="hidden-labels.html" class="menu-item"> دسته بندی  احبار</a>
-                                </li>
+
                                
                             </ul>
                         </li>
@@ -74,13 +68,22 @@
                                 <li class=""><a href="basic-forms.html" class="menu-item"> افزودن مقاله   </a>
                                 </li>
                                 <li class=""><a href="horizontal-forms.html" class="menu-item"> لیست  مقاله </a>
-                                </li>
-                                <li class=""><a href="hidden-labels.html" class="menu-item"> دسته بندی  مقاله</a>
-                                </li>
+
                                
                             </ul>
                         </li>
                <!-------------------end-article------------------>
+                <!-------------------Products------------------>
+                <li class="has-sub is-shown"><a href="#" class="menu-item">دسته بندی</a>
+                    <ul class="menu-content" style="">
+                        <li class=""><a href="index.php?page=category/add" class="menu-item"> دسته بندی جدید </a>
+                        </li>
+                        <li class=""><a href="index.php?page=category/list" class="menu-item">لیست دسته بندی ها</a>
+
+
+                    </ul>
+                </li>
+                <!-------------------end-Products------------------>
 
             </ul>
         </div>

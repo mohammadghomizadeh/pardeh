@@ -31,7 +31,7 @@
                         <td><img class="media-object round-media" src="uploads/products/<?php echo $rowproduct['image1']; ?>" style="height: 75px;"></td>
                         <td><?php echo $rowproduct['title']; ?></td>
                         <td><?php echo $rowproduct['price']; ?></td>
-                        <td><?php echo $rowproduct['category-id']; ?></td>
+                        <td><?php echo $rowproduct['cat_id']; ?></td>
                         <td>
 
                             <a href="index.php?page=product/edit&id=<?php echo $rowproduct['id']; ?>" class="danger" data-original-title="" title="">

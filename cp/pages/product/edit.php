@@ -25,6 +25,7 @@ foreach($resultproduct as $rowedit) {
                             foreach($resultcategory as $rowcategory)
                             {
                                 ?>
+
                                 <option value="<?php echo $rowcategory['id'];?>"><?php echo $rowcategory['title'];?></option>
                                 <?php
                             }
@@ -208,9 +209,7 @@ foreach($resultproduct as $rowedit) {
         </div>
 
         <div class="form-actions">
-            <button type="submitcancel" class="btn btn-raised btn-raised btn-warning mr-1">
-                <i class="ft-x"></i> لغو
-            </button>
+
             <button type="submit_editsave" class="btn btn-raised btn-raised btn-primary">
                 <i class="fa fa-check-square-o"></i> ذخیره
             </button>
