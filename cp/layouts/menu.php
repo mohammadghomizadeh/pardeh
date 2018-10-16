@@ -49,7 +49,7 @@
                                 </li>
                                 <li class=""><a href="index.php?page=portfolio/list" class="menu-item"> لیست نمونه کار </a>
                                 </li>
-                                <li class=""><a href="index.php?page=portfolio/catrgory" class="menu-item"> دسته بندی نمونه کار</a>
+                                <li class=""><a href="index.php?page=portfolio/category/add" class="menu-item"> دسته بندی نمونه کار</a>
                                 </li>
                                
                             </ul>
