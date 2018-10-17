@@ -73,7 +73,16 @@
                     </ul>
                 </li>
                 <!-------------------end-Products------------------>
+                <!-------------------ORDER------------------>
+                <li class="has-sub is-shown"><a href="#" class="menu-item">سفارشات</a>
+                    <ul class="menu-content" style="">
 
+                        <li class=""><a href="index.php?page=order/list" class="menu-item">لیست محصولات </a>
+
+
+                    </ul>
+                </li>
+                <!-------------------end-ORDER------------------>
             </ul>
         </div>
         <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;"><div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; right: 239px;"><div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></div>
