@@ -21,9 +21,6 @@ if (isset($_POST['submit'])){
     $portfolio_image3=$ctime.$_FILES["portfolio_image3"]["name"];
     $url3="uploads/portfolios/".basename($ctime.$_FILES["portfolio_image3"]["name"]);
     move_uploaded_file($_FILES["portfolio_image3"]["tmp_name"],$url3);
-
-
-
 $result=$db->insert("portfolio",array(
     "title"=>$portfolio_title,
     "description"=>$portfolio_description,

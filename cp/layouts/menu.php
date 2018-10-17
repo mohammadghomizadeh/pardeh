@@ -53,9 +53,9 @@
                 <!-------------------news------------------>
                        <li class="has-sub is-shown"><a href="#" class="menu-item">اخبار </a>
                             <ul class="menu-content" style="">
-                                <li class=""><a href="basic-forms.html" class="menu-item"> افزودن اخبار   </a>
+                                <li class=""><a href="index.php?page=news/add" class="menu-item"> افزودن اخبار   </a>
                                 </li>
-                                <li class=""><a href="horizontal-forms.html" class="menu-item"> لیست  اخبار </a>
+                                <li class=""><a href="index.php?page=news/list" class="menu-item"> لیست  اخبار </a>
 
                                
                             </ul>
