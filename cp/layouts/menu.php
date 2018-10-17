@@ -50,28 +50,18 @@
                             </ul>
                         </li>
                <!-------------------end-portfolio------------------>
-                <!-------------------news------------------>
-                       <li class="has-sub is-shown"><a href="#" class="menu-item">اخبار </a>
+                <!-------------------post------------------>
+                       <li class="has-sub is-shown"><a href="#" class="menu-item">مطالب </a>
                             <ul class="menu-content" style="">
-                                <li class=""><a href="index.php?page=news/add" class="menu-item"> افزودن اخبار   </a>
+                                <li class=""><a href="index.php?page=post/add" class="menu-item"> افزودن مطلب  </a>
                                 </li>
-                                <li class=""><a href="index.php?page=news/list" class="menu-item"> لیست  اخبار </a>
+                                <li class=""><a href="index.php?page=post/list" class="menu-item"> لیست مطالب </a>
 
                                
                             </ul>
                         </li>
                <!-------------------end-news------------------>
-               <!-------------------article------------------>
-               <li class="has-sub is-shown"><a href="#" class="menu-item">مقاله </a>
-                            <ul class="menu-content" style="">
-                                <li class=""><a href="basic-forms.html" class="menu-item"> افزودن مقاله   </a>
-                                </li>
-                                <li class=""><a href="horizontal-forms.html" class="menu-item"> لیست  مقاله </a>
 
-                               
-                            </ul>
-                        </li>
-               <!-------------------end-article------------------>
                 <!-------------------Products------------------>
                 <li class="has-sub is-shown"><a href="#" class="menu-item">دسته بندی</a>
                     <ul class="menu-content" style="">
