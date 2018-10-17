@@ -1,7 +1,7 @@
 <div class="col-sm-12">
     <div class="card">
         <div class="card-header">
-            <h4 class="card-title">لیست اخبار</h4>
+            <h4 class="card-title">لیست مطالب</h4>
         </div>
         <div class="card-body">
             <div class="card-block">
@@ -10,8 +10,8 @@
                         <tr>
                             <th>شماره</th>
                             <th>تصویر</th>
-                            <th> عنوان خبر</th>
-                            <th>دسته خبر</th>
+                            <th> عنوان مطلب</th>
+                            <th>دسته مطلب</th>
                             <th>تاریخ</th>
                             <th>بازدید</th>
                             <th>ویرایش</th>
@@ -25,19 +25,19 @@
                     ?>
                         <tr>
                             <td><?php echo $row["id"]; ?></td>
-                            <td><img class="media-object round-media" src="uploads/news/<?php echo $row["image"];?>" alt="<?php echo $row["title"] ?>" style="height: 75px;"></td>
+                            <td><img class="media-object round-media" src="uploads/posts/<?php echo $row["image"];?>" alt="<?php echo $row["title"] ?>" style="height: 75px;"></td>
                             <td><?php echo $row["title"]; ?></td>
-                            <td><?php echo $row["cat_id"]; ?></td>
+                            <td><?php echo $row["type"]; ?></td>
                             <td><?php echo $row["create_at"]?></td>
                             <td><?php echo $row["view"]?></td>
                             <td>
-                            <a class="danger" href="index.php?page=news/edit&id=<?php  echo $row["id"];?>">
+                            <a class="danger" href="index.php?page=post/edit&id=<?php  echo $row["id"];?>">
                                     <i class="ft-edit font-medium-3"></i>
                                 </a></td>
                             </td>
                             <td>
                             
-                            <a class="danger" href="index.php?page=news/delete&id=<?php echo $row['id'];?>">
+                            <a class="danger" href="index.php?page=post/delete&id=<?php echo $row['id'];?>">
                                     <i class="ft-trash font-medium-3"></i>
                                 </a>
                             
@@ -47,7 +47,7 @@
                         </tr>
                     <?php }; ?>
                         <tr>
-                            <td><a href="index.php?page=news/add"><input class="btn btn-success btn-raised" type="submit" value="افزودن"></a> </td>
+                            <td><a href="index.php?page=post/add"><input class="btn btn-success btn-raised" type="submit" value="افزودن"></a> </td>
                         </tr>
                     </tbody>
                 </table>
