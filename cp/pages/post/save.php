@@ -18,8 +18,6 @@ $result=$db->insert("post",array(
     "title"=>$post_title,
     "description"=>$post_description,
     "image"=>$post_image1,
-    "cat_id"=>$post_cat_id,
-    "tag"=>$post_tag,
     "type"=>$cat_post,
     "create_at"=>$ctime));
     if ($result){

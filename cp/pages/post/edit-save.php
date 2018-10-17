@@ -24,6 +24,3 @@ $result_editpost=$db->run("UPDATE `post` SET
 
 ?>
 
-<script>
-window.location.replace("index.php?page=post/list");
-</script>
