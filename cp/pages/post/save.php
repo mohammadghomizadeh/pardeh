@@ -15,21 +15,13 @@ if (isset($_POST['submit'])){
     move_uploaded_file($_FILES["post_image1"]["tmp_name"],$url1);
  
 $result=$db->insert("post",array(
-<<<<<<< HEAD
-    "title"=>$news_title,
-    "description"=>$news_description,
 
-    "image"=>$news_image1,
-    "cat_id"=>$news_cat_id,
-    "tag"=>$news_tag,
-=======
     "title"=>$post_title,
     "description"=>$post_description,
     "image"=>$post_image1,
     "cat_id"=>$post_cat_id,
     "tag"=>$post_tag,
     "type"=>$cat_post,
->>>>>>> e566fbe4aaba1d671be1840690909b5af458b7a2
     "create_at"=>$ctime));
     if ($result){
         ?>

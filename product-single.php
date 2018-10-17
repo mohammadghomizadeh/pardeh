@@ -6,20 +6,20 @@
 <!--/single_page-->
        <!-- /banner_bottom_agile_info -->
 <?php
-//view
-
-
-?>
-
-
-
-
-
-<?php
 $id = $_GET['id'];
 $ResultSingleProduct = $db->select("product","`id` = '$id'");
+//ViewCheck
+$resultview = $db->select("product","`id` = '$id'");
+foreach($resultview as $row)
+{
+    $view = $row['view'];
+}
+$view += 1;
+$db->run("UPDATE `product` SET `view` = '$view' WHERE `id` = '$id'");
+//EndViewCheck
 foreach($ResultSingleProduct as $rowSingle)
 {
+
 ?>
     <div class="page-head_agile_info_w3l">
         <div class="container">
@@ -46,18 +46,15 @@ foreach($ResultSingleProduct as $rowSingle)
                 <div class="flexslider">
 
                     <ul class="slides">
-                        <li data-thumb="_Content/images/d2.jpg">
+                        <li data-thumb="cp/uploads/products/<?php echo $rowSingle['image1']; ?>">
                             <div class="thumb-image"><img src="cp/uploads/products/<?php echo $rowSingle['image1']; ?>" data-imagezoom="true"
                                                           data-zoomviewposition="left" class="img-responsive"></div>
                         </li>
-                        <li data-thumb="_Content/images/d1.jpg">
+                        <li data-thumb="cp/uploads/products/<?php echo $rowSingle['image2']; ?>">
                             <div class="thumb-image"><img src="cp/uploads/products/<?php echo $rowSingle['image2']; ?>" data-imagezoom="true"
                                                           data-zoomviewposition="left" class="img-responsive"></div>
                         </li>
-                        <li data-thumb="_Content/images/d3.jpg">
-                            <div class="thumb-image"><img src="cp/uploads/products/<?php echo $rowSingle['image3']; ?>" data-imagezoom="true"
-                                                          data-zoomviewposition="left" class="img-responsive"></div>
-                        </li>
+
                     </ul>
                     <div class="clearfix"></div>
                 </div>
