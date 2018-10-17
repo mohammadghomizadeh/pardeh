@@ -20,6 +20,7 @@ if (isset($_POST['submit'])){
 $result=$db->insert("post",array(
     "title"=>$news_title,
     "description"=>$news_description,
+
     "image"=>$news_image1,
     "cat_id"=>$news_cat_id,
     "tag"=>$news_tag,
