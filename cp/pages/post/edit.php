@@ -15,7 +15,7 @@
 
 								<div class="form-group">
                                     <label for="cat_post">دسته مطالب</label>
-                                        <select id="cat_post" name="cat_post" class="form-control">
+                                        <select id="post_type" name="post_type" class="form-control">
                                             <option value="news">اخبار</option>
                                             <option value="article">مقاله</option>
                                         </select>
