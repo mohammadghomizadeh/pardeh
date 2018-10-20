@@ -19,6 +19,8 @@
                                             <option value="news">اخبار</option>
                                             <option value="article">مقاله</option>
                                         </select>
+                                </div>
+                            </div>
 		<!--image1-->
         <div class="row">
             <div class="col-md-6">
