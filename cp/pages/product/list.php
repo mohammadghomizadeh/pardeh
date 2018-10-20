@@ -24,7 +24,6 @@
                         $resultproduct = $db->select("product");
                         foreach($resultproduct as $rowproduct)
                         {
-
                     ?>
                     <tr>
                         <td><?php echo $i; ?></td>

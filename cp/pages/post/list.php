@@ -27,7 +27,7 @@
                             <td><?php echo $row["id"]; ?></td>
                             <td><img class="media-object round-media" src="uploads/posts/<?php echo $row["image"];?>" alt="<?php echo $row["title"] ?>" style="height: 75px;"></td>
                             <td><?php echo $row["title"]; ?></td>
-                            <td><?php echo $row["type"]; ?></td>
+                            <td><?php echo $row["cat_id"]; ?></td>
                             <td><?php echo $row["create_at"]?></td>
                             <td><?php echo $row["view"]?></td>
                             <td>
