@@ -27,10 +27,15 @@
 	     <div class="col-md-4 single-right-left ">
 			<div class="grid images_3_of_2">
 				<div class="flexslider">
+				<?php
+				
+				$resultpost=$db->select("post");
+                foreach ($resultpost as $row) {
+                ?>
 					<ul class="slides">
 						<li>
 							<div class="thumb-image">
-                                <img src="_Content/images/m2.jpg" width="255" height="291"  data-zoomviewposition="left" class="img-responsive"> </div>
+                                <img src="cp/uploads/posts/<?php echo $row['image']; ?>" width="255" height="291"  data-zoomviewposition="left" class="img-responsive"> </div>
 						</li>
 					</ul>
 					<div class="clearfix"></div>
@@ -38,15 +43,15 @@
 			</div>
 		</div>
 		<div class="col-md-8 single-right-left simpleCart_shelfItem">
-					<h3>کفش مردانه اسپرت</h3>
-					<p>تاریخ : </p>
+					<h3><?php echo $row['title']; ?></h3>
+					<p></p>
 
 					<div class="description">
-						<h5>با ثبت کدپستی خود، از هزینه ارسال کالا باخبر شوید.</h5>
+						<h5><?php echo substr($row['description'],1000); ?></h5>
 
 					</div>
 
-
+		<?php }; ?>
 		      </div>
 	 			<div class="clearfix"> </div>
 				<!-- /new_arrivals --> 
