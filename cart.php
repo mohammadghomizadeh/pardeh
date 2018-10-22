@@ -25,35 +25,62 @@
 
 <div class="cartshop">
 
-    <table style="width:100%" cellspacing="3px">
-        <tr>
-            <th>تصویر</th>
-            <th>نام محصول</th>
-            <th>قیمت واحد</th>
-            <th>متراژ</th>
-            <th>قیمت</th>
-            <th>عملیات</th>
-        </tr>
-        <tr>
-            <td>
-                <img src="_Content/images/b5.jpg" width="100" height="100" alt="">
-            </td>
-            <td>کیف مجلسی زنانه با چرم هندی</td>
-            <td>1800000</td>
-            <td>50متر</td>
-            <td>185700000</td>
-            <td>
-                <button type="submit" class="btndel"><i class="fa fa-trash fa-2x" aria-hidden="true"></i></button>
-            </td>
-        </tr>
+        <table style="width:100%" cellspacing="3px">
+            <tr>
+                <th>تصویر</th>
+                <th>نام محصول</th>
+                <th>قیمت واحد</th>
+                <th>متراژ</th>
+                <th>قیمت</th>
+                <th>عملیات</th>
+            </tr>
+            <?php
+            $user = getRealUserIp();
+            $resultCart = $db->select("cart","`user_id` = '$user'");
+            foreach($resultCart as $rowcart) {
 
+            ?>
+            <tr>
+                <td>
+                    <img src="cp/uploads/products/<?php echo $rowcart['img']; ?>" width="100" height="100" alt="">
+                </td>
+                <td><?php echo $rowcart['title']; ?></td>
+                <td>
+                    <?php
+                    $pid = $rowcart['product_id'];
+                    $rm = $db->select("product","`id` = '$pid'");
+                    foreach($rm as $rowm)
+                    {
+                        echo $rowm['price'];
+                    }
+                    ?>
 
-    </table>
+                </td>
+                <td><?php echo $rowcart['meter']; ?></td>
+                <td><?php echo $rowcart['total']; ?></td>
+                <td>
+                    <a href="delete.php?id=<?php echo $rowcart['id']; ?>" class="btndel"><i class="fa fa-trash fa-2x" aria-hidden="true"></i></a>
+                </td>
+            </tr>
+
+                <?php
+            };
+            ?>
+        </table>
+
     <table id="tbltotal" style="width:100%" cellspacing="3px">
         <tr>
+            <?php
+            $ResultTotal = $db->run("SELECT total FROM `cart` WHERE `user_id` = '$user'");
+            $toto = 0;
+            foreach($ResultTotal as $rowTotal) {
+                $toto += $rowTotal['total'];
+            }
+            ?>
             <td>
-               قیمت کل : <span>15419564546 تومان</span>
+               تومان : <?php echo($toto); ?>
             </td>
+
 
         <tr class="btninput">
             <td>

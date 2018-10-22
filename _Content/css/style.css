@@ -32,6 +32,9 @@ html, body{
 	background: #fff;
 	font-family: 'irsans_bold';
 }
+#cartcount{
+    font-size:15px !important;
+}
 body a {
 	text-decoration:none;
 	transition:0.5s all;

@@ -31,6 +31,10 @@ if(isset($_GET['id']) && !empty($_GET['id']))
         "total" => $total,
         "user_id" =>$user_ip,
         "create_at" =>$datetime));
+    if($resultadd)
+    {
+        header("Location:product-single.php?id=$product_id");
+    }
 }
 
 

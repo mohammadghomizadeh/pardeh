@@ -167,11 +167,23 @@
         </div>
         <div class="top_nav_left">
             <div class="wthreecartaits wthreecartaits2 cart cart box_1">
-                <form action="#" method="post" class="last">
+                <form action="cart.php" method="post" class="last">
                     <input type="hidden" name="cmd" value="_cart">
                     <input type="hidden" name="display" value="1">
                     <button class="w3view-cart" type="submit" name="submit" value="">
-                        <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                        <?php
+                        $user = getRealUserIp();
+                        $cartCount = $db->run("SELECT count(id) From `cart` WHERE `user_id` = '$user'");
+                        foreach($cartCount as $row)
+                        {
+                            $count= $row['count(id)'];
+                        }
+                        ?>
+                        <i class="fa fa-cart-arrow-down" aria-hidden="true">
+                            <span id="cartcount">
+                                <?php echo $count;  ?>
+                            </span>
+                        </i>
                     </button>
                 </form>
             </div>
