@@ -1,4 +1,8 @@
 <!--headscript-->
+<?php
+session_start();
+if($_SESSION['userlogin'] == true){
+?>
 <?php include('layouts/head-script.php'); ?>
 <!--Endheadscript-->
 <body data-col="2-columns" class=" 2-columns ">
@@ -48,3 +52,10 @@ if(isset($_GET['page']) && !empty($_GET['page']))
 <!-- Theme customizer Ends-->
 <!-- BEGIN VENDOR JS-->
 <?php include('layouts/footer-script.php'); ?>
+
+<?php
+}else
+{
+    header("Location:../login.php");
+}
+    ?>

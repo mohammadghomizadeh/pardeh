@@ -37,7 +37,7 @@ foreach($ResultSingleProduct as $rowSingle)
             <!--//w3_short-->
         </div>
     </div>
-
+<form action="addtocart.php?id=<?php echo $rowSingle['id']; ?>" method="post">
 <!-- banner-bootom-w3-agileits -->
 <div class="banner-bootom-w3-agileits">
     <div class="container">
@@ -81,19 +81,16 @@ foreach($ResultSingleProduct as $rowSingle)
             </div>
             <div class="description">
                 <h5><?php echo $rowSingle['description']; ?></h5>
-                <form action="#" method="post">
-                    <input type="text" placeholder="کدپستی" required="">
-                    <input type="submit" value="محاسبه">
-                </form>
+
             </div>
             <div class="color-quality">
                 <div class="color-quality-right">
                     <h5>تعداد: </h5>
-                    <select id="country1" onchange="change_country(this.value)" class="frm-field required sect">
-                        <option value="null">۱</option>
-                        <option value="null">۲</option>
-                        <option value="null">۳</option>
-                        <option value="null">۴</option>
+                    <select id="meter" name="meter" onchange="change_country(this.value)" class="frm-field required sect">
+                        <option value="1">۱</option>
+                        <option value="2">۲</option>
+                        <option value="3">۳</option>
+                        <option value="4">۴</option>
                     </select>
                 </div>
             </div>
@@ -112,9 +109,9 @@ foreach($ResultSingleProduct as $rowSingle)
             </div>
             <div class="occasion-cart">
                 <div class="snipcart-details hvr-outline-out">
-                    <form action="#" method="post">
+
                         <input type="submit" name="submit" value="افزودن به سبد خرید" class="button">
-                    </form>
+
                 </div>
             </div>
             <ul class="social-nav model-3d-0 footer-social w3_agile_social single_page_w3ls">
@@ -180,6 +177,7 @@ foreach($ResultSingleProduct as $rowSingle)
                                     <div class="clearfix"></div>
                                     ‌
                                 </div>
+</form>
                                 <div class="add-review">
                                     <h4>افزودن دیدگاه</h4>
                                     <form action="#" method="post">
@@ -214,7 +212,7 @@ foreach($ResultSingleProduct as $rowSingle)
         }
         ?>
 	  	<!--/slider_owl-->
-	
+
 			<div class="w3_agile_latest_arrivals">
 			<h3 class="wthree_text_info">محصولات <span>جدید</span></h3>	
 					  <div class="col-md-3 product-men single">
