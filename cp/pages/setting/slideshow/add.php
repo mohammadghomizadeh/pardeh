@@ -6,8 +6,8 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="form-group">
-                <label for="slide_title">عنوان اسلاید</label>
-                <input id="slide_title" class="form-control" name="slide_title" type="text"> 
+                <label for="slide_desc">عنوان اسلاید</label>
+                <input id="slide_desc" class="form-control" name="slide_desc" type="text"> 
                     <label for="file"> تصاویر اسلاید شو</label>
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">

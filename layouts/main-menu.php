@@ -152,13 +152,13 @@
                                 </ul>
                             </li>
                             <li class=" menu__item">
-                                <a class="menu__link irsans16" href="about.html">اخبار سایت</a>
+                                <a class="menu__link irsans16" href="posts.php">اخبار سایت</a>
                             </li>
                             <li class=" menu__item">
-                                <a class="menu__link irsans16" href="about.html">درباره ما</a>
+                                <a class="menu__link irsans16" href="about.php">درباره ما</a>
                             </li>
                             <li class=" menu__item">
-                                <a class="menu__link irsans16" href="contact.html">تماس با ما</a>
+                                <a class="menu__link irsans16" href="contact.php">تماس با ما</a>
                             </li>
                         </ul>
                     </div>

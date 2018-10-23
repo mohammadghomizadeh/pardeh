@@ -25,7 +25,7 @@
             <div class="imgOverlay"></div>
             <img src="cp/uploads/slideshow/<?php echo $row['image'];?>" alt="First slide">
             <div class="carousel-caption">
-                <h3></h3>
+                <h3><?php echo $row['description']; ?></h3>
                 
             </div>
         </div>
