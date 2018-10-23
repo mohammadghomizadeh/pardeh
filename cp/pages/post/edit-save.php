@@ -5,7 +5,7 @@
     $post_description=$_POST['post_description'];
     $uploaddir = 'uploads/posts/';
     $ctime = $date->date("Y-m-d", false, false);
-    /*----image1----*/
+
     if(!empty($_FILES['post_image1']['name'])){
     $post_image1= $ctime.$_FILES["post_image1"]["name"];
     $upload1=$uploaddir.basename($ctime.$_FILES["post_image1"]["name"]);

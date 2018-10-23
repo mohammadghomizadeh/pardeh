@@ -51,10 +51,7 @@ if(!empty($_FILES['product_image4']['name']))
         `cat_id`= '$product_category',
         `update_at`= '$datetime'
           WHERE `id` = '$editid'");
-
-
     ?>
-
         <script>
             window.location.replace("index.php?page=product/list");
         </script>

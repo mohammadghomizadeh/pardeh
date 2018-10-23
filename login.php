@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+<?php
+echo "loginpage";
+?>
+=======
 <html lang="en" class="loading"><!-- Mirrored from pixinvent.com/apex-angular-4-bootstrap-admin-template/html-demo-6/login-page.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 15 Sep 2018 12:48:39 GMT --><head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -123,3 +128,4 @@
 
 <!-- Mirrored from pixinvent.com/apex-angular-4-bootstrap-admin-template/html-demo-6/login-page.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 15 Sep 2018 12:48:40 GMT -->
 </body></html>
+>>>>>>> d1cbc2fd1cb30720d09d42b3994b6a0dc6a77677

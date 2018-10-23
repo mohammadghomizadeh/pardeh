@@ -29,7 +29,7 @@
 				<div class="flexslider">
 				<?php
 				
-				$resultpost=$db->select("post");
+				$resultpost=$db->select("post","`type` = 'article'");
                 foreach ($resultpost as $row) {
                 ?>
 					<ul class="slides">
@@ -47,7 +47,7 @@
 					<p></p>
 
 					<div class="description">
-						<h5><?php echo substr($row['description'],1000); ?></h5>
+						<h5><?php echo substrwords($row['description'],1000); ?></h5>
 
 					</div>
 
