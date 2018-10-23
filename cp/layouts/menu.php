@@ -83,6 +83,19 @@
                     </ul>
                 </li>
                 <!-------------------end-ORDER------------------>
+                <!-------------------ORDER------------------>
+                <li class="has-sub is-shown"><a href="#" class="menu-item">تنظیمات</a>
+                    <ul class="menu-content" style="">
+
+                        <li class=""><a href="index.php?page=setting/slideshow/list" class="menu-item">اسلاید شو </a>
+                        <li class=""><a href="index.php?page=order/list" class="menu-item">درباره ما </a>
+                        <li class=""><a href="index.php?page=order/list" class="menu-item">تماس با ما</a>
+                        
+
+
+                    </ul>
+                </li>
+                <!-------------------end-ORDER------------------>
             </ul>
         </div>
         <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;"><div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; right: 239px;"><div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></div>

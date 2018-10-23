@@ -1,7 +1,7 @@
 <!--headscript-->
 <?php
 session_start();
-if($_SESSION['userlogin'] == true){
+if($_SESSION['userlogin'] == false){
 ?>
 <?php include('layouts/head-script.php'); ?>
 <!--Endheadscript-->
