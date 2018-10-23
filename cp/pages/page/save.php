@@ -1,0 +1,9 @@
+<?php
+if(isset($_POST['addpage']))
+{
+    $result=$db->insert("page",array("
+    title"=>$title,
+    "content"=>$content,
+    "type"=>$type
+        ));
+}

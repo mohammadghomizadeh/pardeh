@@ -17,12 +17,12 @@
                     <div class="collapse navbar-collapse menu--shylock" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav menu__list">
                             <li class="active menu__item menu__item--current">
-                                <a class="menu__link irsans16" href="index.html">خانه
+                                <a class="menu__link irsans16" href="index.php">خانه
                                     <span class="sr-only">(current)</span>
                                 </a>
                             </li>
                             <li class="dropdown menu__item">
-                                <a href="#" class="dropdown-toggle menu__link irsans16" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">پوشاک مردانه
+                                <a href="products.php" class="dropdown-toggle menu__link irsans16" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">محصولات
                                     <span class="caret"></span>
                                 </a>
                                 <ul class="dropdown-menu multi-column columns-3">
