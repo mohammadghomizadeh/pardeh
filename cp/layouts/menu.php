@@ -97,13 +97,10 @@
                 <!-------------------ORDER------------------>
                 <li class="has-sub is-shown"><a href="#" class="menu-item">تنظیمات</a>
                     <ul class="menu-content" style="">
-
+                        <li class=""><a href="index.php?page=setting/setting/edit" class="menu-item">تنظیمات</a>
                         <li class=""><a href="index.php?page=setting/slideshow/list" class="menu-item">اسلاید شو </a>
                         <li class=""><a href="index.php?page=setting/about-us/edit" class="menu-item">درباره ما </a>
-                        <li class=""><a href="index.php?page=setting/about-us/save" class="menu-item">تماس با ما</a>
-                        
-
-
+                        <li class=""><a href="index.php?page=setting/contact-us/edit" class="menu-item">تماس با ما</a>
                     </ul>
                 </li>
                 <!-------------------end-ORDER------------------>
