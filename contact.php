@@ -4,6 +4,9 @@
 <!-- header -->
 <?php include('layouts/header.php'); ?>
 <!-- //header-bot -->
+<!-- MainMenu-->
+<?php include('layouts/main-menu.php'); ?>
+<!-- //Main-Menu -->
 <div class="page-head_agile_info_w3l">
     <div class="container">
         <h3>تماس

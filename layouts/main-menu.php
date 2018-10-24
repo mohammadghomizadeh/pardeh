@@ -34,27 +34,20 @@
                                         </div>
                                         <div class="col-sm-3 multi-gd-img">
                                             <ul class="multi-column-dropdown irsans14">
-                                                <li>
-                                                    <a href="mens.html">شلوار</a>
-                                                </li>
-                                                <li>
-                                                    <a href="mens.html">کیف</a>
-                                                </li>
-                                                <li>
-                                                    <a href="mens.html">کفش</a>
-                                                </li>
-                                                <li>
-                                                    <a href="mens.html">ساعت</a>
-                                                </li>
-                                                <li>
-                                                    <a href="mens.html">اکسسوری</a>
-                                                </li>
-                                                <li>
-                                                    <a href="mens.html">کوله پشتی</a>
-                                                </li>
-                                                <li>
-                                                    <a href="mens.html">کلاه و دستکش</a>
-                                                </li>
+                                                <?php
+                                                $recat = $db->select("category","`type` = 'product' LIMIT 6");
+                                                foreach($recat as $rowcat)
+                                                {
+                                                    ?>
+                                                    <li>
+                                                        <a href="catpage.php?id=<?php echo $rowcat['id']; ?>"><?php echo $rowcat['title']; ?></a>
+                                                    </li>
+                                                <?php
+
+                                                }
+                                                ?>
+
+
                                             </ul>
                                         </div>
                                         <div class="col-sm-3 multi-gd-img">
@@ -86,71 +79,7 @@
                                     </div>
                                 </ul>
                             </li>
-                            <li class="dropdown menu__item">
-                                <a href="#" class="dropdown-toggle menu__link irsans16" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">پوشاک زنانه
-                                    <span class="caret"></span>
-                                </a>
-                                <ul class="dropdown-menu multi-column columns-3">
-                                    <div class="agile_inner_drop_nav_info">
-                                        <div class="col-sm-3 multi-gd-img">
-                                            <ul class="multi-column-dropdown irsans14">
-                                                <li>
-                                                    <a href="womens.html">شلوار</a>
-                                                </li>
-                                                <li>
-                                                    <a href="womens.html">کیف</a>
-                                                </li>
-                                                <li>
-                                                    <a href="womens.html">کفش</a>
-                                                </li>
-                                                <li>
-                                                    <a href="womens.html">ساعت</a>
-                                                </li>
-                                                <li>
-                                                    <a href="womens.html">اکسسوری</a>
-                                                </li>
-                                                <li>
-                                                    <a href="womens.html">کوله پشتی</a>
-                                                </li>
-                                                <li>
-                                                    <a href="womens.html">کلاه و دستکش</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-sm-3 multi-gd-img">
-                                            <ul class="multi-column-dropdown irsans14">
-                                                <li>
-                                                    <a href="womens.html">زیورآلات</a>
-                                                </li>
-                                                <li>
-                                                    <a href="womens.html">عینک آفتابی</a>
-                                                </li>
-                                                <li>
-                                                    <a href="womens.html">عطرها</a>
-                                                </li>
-                                                <li>
-                                                    <a href="womens.html">آرایشی و بهداشتی</a>
-                                                </li>
-                                                <li>
-                                                    <a href="womens.html">تاپ و تیشرت</a>
-                                                </li>
-                                                <li>
-                                                    <a href="womens.html">لباس مجلسی</a>
-                                                </li>
-                                                <li>
-                                                    <a href="womens.html">لباس زیر</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-sm-6 multi-gd-img multi-gd-text ">
-                                            <a href="womens.html">
-                                                <img src="_Content/images/top1.jpg" alt=" " />
-                                            </a>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                    </div>
-                                </ul>
-                            </li>
+
                             <li class=" menu__item">
                                 <a class="menu__link irsans16" href="posts.php">اخبار سایت</a>
                             </li>
