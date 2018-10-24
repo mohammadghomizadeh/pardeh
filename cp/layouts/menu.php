@@ -73,11 +73,22 @@
                     </ul>
                 </li>
                 <!-------------------end-Products------------------>
+                <!-------------------Pages------------------>
+                <li class="has-sub is-shown"><a href="#" class="menu-item">صفحات</a>
+                    <ul class="menu-content" style="">
+
+                        <li class=""><a href="index.php?page=page/list" class="menu-item">لیست صفحات سایت</a>
+                        <li class=""><a href="index.php?page=page/add" class="menu-item">افزودن صفحه جدید</a>
+                        <li class=""><a href="index.php?page=page/manage" class="menu-item">مدیریت صفحات</a>
+
+                    </ul>
+                </li>
+                <!-------------------end-Pages------------------>
                 <!-------------------ORDER------------------>
                 <li class="has-sub is-shown"><a href="#" class="menu-item">سفارشات</a>
                     <ul class="menu-content" style="">
 
-                        <li class=""><a href="index.php?page=order/list" class="menu-item">لیست محصولات </a>
+                        <li class=""><a href="index.php?page=order/list" class="menu-item">لیست سفارشات</a>
 
 
                     </ul>
