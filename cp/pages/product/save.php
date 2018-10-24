@@ -8,8 +8,8 @@ try {
     $product_price = $_POST['product_price'];
     $uploaddir = 'uploads/products/';
     /*img1*/
-    $product_image1 = $datetime . $_FILES['product_image1']['name'];
-    $uploadfile1 = $uploaddir . basename($datetime . $_FILES['product_image1']['name']);
+    $product_image1 = $datetime.$_FILES['product_image1']['name'];
+    $uploadfile1 = $uploaddir . basename($datetime.$_FILES['product_image1']['name']);
     move_uploaded_file($_FILES['product_image1']['tmp_name'], $uploadfile1);
     /*img2*/
     $product_image2 = $datetime . $_FILES['product_image2']['name'];

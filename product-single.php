@@ -7,7 +7,7 @@
        <!-- /banner_bottom_agile_info -->
 <?php
 $id = $_GET['id'];
-$ResultSingleProduct = $db->select("product","`id` = '$id'");
+
 //ViewCheck
 $resultview = $db->select("product","`id` = '$id'");
 foreach($resultview as $row)
@@ -17,20 +17,21 @@ foreach($resultview as $row)
 $view += 1;
 $db->run("UPDATE `product` SET `view` = '$view' WHERE `id` = '$id'");
 //EndViewCheck
+$ResultSingleProduct = $db->select("product","`id` = '$id'");
 foreach($ResultSingleProduct as $rowSingle)
 {
 
 ?>
     <div class="page-head_agile_info_w3l">
         <div class="container">
-            <h3>کفش <span>مردانه</span></h3>
+            <h3><?php echo $rowSingle['title']; ?></h3>
             <!--/w3_short-->
             <div class="services-breadcrumb">
                 <div class="agile_inner_breadcrumb">
 
                     <ul class="w3_short">
-                        <li><a href="index.html">خانه</a><i>|</i></li>
-                        <li>کفش مردانه</li>
+                        <li><a href="index.php">خانه</a><i>|</i></li>
+                        <li><?php echo $rowSingle['title']; ?></li>
                     </ul>
                 </div>
             </div>
@@ -148,12 +149,8 @@ foreach($ResultSingleProduct as $rowSingle)
                     <!--/tab_one-->
                     <div class="tab1">
 
-                        <div class="single_page_agile_its_w3ls">
-                            <h6>کفش اسپرت مردانه Garner</h6>
-                            <p>کفش‌های Garner دارای کیفیت بسیار بالایی میباشند و کفش مذکور دارای رویه و جنس داخلی چرم
-                                طبیعی هستند.</p>
-                            <p class="w3ls_para">جهت نگه‌داری از کالاهای تهیه شده از چرم، از واکس‌های غیر استاندارد
-                                استفاده نشود و حتی المکان در صورت سطح روی کفش، بلافاصله آن را تمیز نمایید.</p>
+                        <div class="single_page_agile_its_w3ls" style="overflow: auto">
+                            <?php echo $rowSingle['description']; ?>
                         </div>
                     </div>
                     <!--//tab_one-->
