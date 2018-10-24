@@ -20,9 +20,9 @@
                             move_uploaded_file($_FILES['siteicon']['tmp_name'], $uploadfile2);
                            
                             $r = $db->run("UPDATE `setting` SET 
-                            `logo` = '$sitelogo'
-                            `icon`='$siteicon'
-                            `title`='$sitetitle'
+                            `logo` = '$sitelogo',
+                            `icon`='$siteicon',
+                            `title`='$sitetitle',
                             `description` = '$sitedescription',
                             `update_at` = '$update',
                             `headscript`='$headerscript',
@@ -31,7 +31,7 @@
                          
                         }
                          $r = $db->run("UPDATE `setting` SET 
-                            `title`='$sitetitle'
+                            `title`='$sitetitle',
                             `description` = '$sitedescription',
                             `update_at` = '$update',
                             `headscript`='$headerscript',

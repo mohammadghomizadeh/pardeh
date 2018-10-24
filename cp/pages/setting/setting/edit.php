@@ -22,12 +22,12 @@
 <div class="form-group">
     <label>لوگوی سایت</label>
     <input type="file" class="form-control"  name="sitelogo" id="sitelogo" value="<?php echo $row['logo']; ?>">
-    <img src="uploads/site/<?php echo $row['logo']; ?>"  width="100" height="100">
+    <img src="uploads/logo/<?php echo $row['logo']; ?>"  width="100" height="100">
 </div>
 <div class="form-group">
     <label>آیکون سایت</label>
     <input type="file" class="form-control"  name="siteicon" id="siteicon" value="<?php echo $row['icon']; ?>">
-    <img src="uploads/site/<?php echo $row['icon']; ?>" width="40" height="40">
+    <img src="uploads/logo/<?php echo $row['icon']; ?>" width="40" height="40">
 </div>
 <label>اسکریپت هدر</label>
 <div class="form-group">
