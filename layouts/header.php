@@ -33,12 +33,18 @@
             </div>
             <!-- header-bot -->
             <div class="col-md-4 col-sm-6 logo_agile">
+            <?php
+                  $result = $db->select("setting","`type` = 'setting'");
+                 foreach($result as $row)
+                 {
+?>
                 <h1>
+
                     <a href="index.html">
-                        <span>E</span>rise Shop
-                        <i class="fa fa-shopping-bag top_logo_agile_bag" aria-hidden="true"></i>
+                        <img src="cp/uploads/logo/<?php echo $row['logo'];?>"  alt="<?php echo $row['title'];?> ">
                     </a>
                 </h1>
+                 <?php }; ?>
             </div>
             <!-- header-bot -->
             <div class="col-md-4 col-sm-6 agileits-social top_content">

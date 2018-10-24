@@ -23,24 +23,28 @@
     </div>
 </div>
 <!--/contact-->
+
 <div class="banner_bottom_agile_info">
     <div class="container">
         <div class="contact-grid-agile-w3s">
             <div class="col-md-4 contact-grid-agile-w3">
+            <?php
+                    $result = $db->select("setting","`type` = 'contactus' LIMIT 1" );
+                    foreach($result as $row){
+                ?>
                 <div class="contact-grid-agile-w31">
                     <i class="fa fa-map-marker" aria-hidden="true"></i>
                     <h4>آدرس شرکت</h4>
-                    <p>ایران - خراسان رضوی - مشهد
-                        <span>بلوار امامت - امامت ۱۷</span>
-                    </p>
+                    <p><?php echo $row['address'];?></p>
                 </div>
+                    <?php }?>
             </div>
             <div class="col-md-4 contact-grid-agile-w3">
                 <div class="contact-grid-agile-w32">
                     <i class="fa fa-phone" aria-hidden="true"></i>
                     <h4>تلفن‌های تماس</h4>
-                    <p>۰۲۱۲۳۴۵۶۷۸۹
-                        <span>۰۵۱۳۲۳۴۵۶۷۸۹</span>
+                    <p>
+                    <?php echo $row['phone'];?>
                     </p>
                 </div>
             </div>
@@ -49,21 +53,20 @@
                     <i class="fa fa-envelope-o" aria-hidden="true"></i>
                     <h4>آدرس ایمیل</h4>
                     <p>
-                        <a href="mailto:info@example.com">info@example.com</a>
-                        <span>
-								<a href="mailto:mail@example.com">mail@example.com</a>
-							</span>
+                        <a href="<?php echo $row['email'];?>"><?php echo $row['email'];?></a>
+                       
                     </p>
                 </div>
+                
             </div>
+            
             <div class="clearfix"> </div>
         </div>
     </div>
 </div>
+                   
 <div class="contact-w3-agile1 map" data-aos="flip-right">
-
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100949.24429313939!2d-122.44206553967531!3d37.75102885910819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan+Francisco%2C+CA%2C+USA!5e0!3m2!1sen!2sin!4v1472190196783"
-            class="map" style="border:0" allowfullscreen=""></iframe>
+<?php echo $row['map'];?>
 </div>
 <div class="banner_bottom_agile_info">
     <div class="container">
@@ -76,7 +79,7 @@
                         <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
                         <div class="contact-right">
                             <p>تلفن تماس </p>
-                            <span>۰۲۱۲۳۴۵۶۷۸۹</span>
+                            <span><?php echo $row['phone'];?></span>
                         </div>
                         <div class="clearfix"> </div>
                     </div>
@@ -84,7 +87,7 @@
                         <i class="fa fa-envelope-o" aria-hidden="true"></i>
                         <div class="contact-right">
                             <p>آدرس ایمیل </p>
-                            <a href="mailto:info@example.com">info@example.com</a>
+                            <a href="<?php echo $row['email'];?>"><?php echo $row['email'];?></a>
                         </div>
                         <div class="clearfix"> </div>
                     </div>
@@ -92,7 +95,7 @@
                         <i class="fa fa-map-marker" aria-hidden="true"></i>
                         <div class="contact-right">
                             <p>آدرس شرکت</p>
-                            <span>مشهد، بلوار امامت، امامت ۱۷</span>
+                            <span><?php echo $row['address'];?></span>
                         </div>
                         <div class="clearfix"> </div>
                     </div>

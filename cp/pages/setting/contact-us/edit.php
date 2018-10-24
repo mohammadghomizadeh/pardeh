@@ -3,57 +3,37 @@
               <h3 class="box-title">ویرایش  تماس با ما</h3>
             </div>
             <hr>
-      <form method="POST" action="index.php?page=setting/about-us/save&id=<?php echo $row['id'];  ?>" enctype="multipart/form-data">
-           
-              </div>
-                <div class="form-control">
-                <label>متن تماس با ما</label>
-                <?php
-                    $result = $db->run("SELECT * FROM `setting` WHERE `type` = 'aboutus' LIMIT 1");
+            <?php
+                     $result = $db->select("setting","`type` = 'contactus' LIMIT 1");
                     foreach($result as $row){
                 ?>
-                <textarea id="aboutdescript" name="aboutdescript" rows="10" cols="80">
-                <?php echo $row['description'];?>
-                </textarea>
-             
-        <div class="row">
-            <div class="col-md-6">
+      <form method="POST" action="index.php?page=setting/contact-us/save&id=<?php echo $row['id'];?>" enctype="multipart/form-data">
+                <div class="form-control">
+                <label>متن تماس با ما</label>
+                
                 <div class="form-group">
-                    <label for="file"> لوگو </label>
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text">بارگذاری</span>
-                        </div>
-                        <div class="custom-file">
-                            <input type="file" class="custom-file-input" id="img_about" name="img_about">
-                            <label class="custom-file-label" for="img_about">انتخاب تصویر </label>
-                        </div>
-                    </div>
+                    <label>آدرس </label>
+                    <input type="text" class="form-control"  name="address" id="address" value="<?php echo $row['address']; ?>">
                 </div>
-            </div>
-            <div class="col-md-6">
-                <img src="uploads/blank.png" id="image_about" height="100" width="150">
-            </div>
-            <script type="text/javascript">
-                function readURL1(input) {
-                    if (input.files && input.files[0]) {
-                        var reader = new FileReader();
+                <div class="form-group">
+                    <label>تلفن تماس </label>
+                    <input type="text" class="form-control"  name="tell" id="tell" value="<?php echo $row['phone']; ?>">
+                </div>
+                <div class="form-group">
+                    <label>آدرس ایمیل </label>
+                    <input type="text" class="form-control"  name="email" id="email" value="<?php echo $row['email']; ?>">
+                </div>
 
-                        reader.onload = function (e) {
-                            $('#image_about').attr('src', e.target.result);
-                        }
-                        reader.readAsDataURL(input.files[0]);
-                    }
-                }
-                $("#img_about").change(function(){
-                    readURL1(this);
-                });
-            </script>
-        </div>
+                 <div class="form-group">
+			        <label for="map">iframe نقشه با </label>
+			        <textarea id="map" rows="5" class="form-control" name="map"><?php echo $row['map']; ?></textarea>
+		        </div>
+                </div>
     
-                <?php }; ?>
+              
                 </div>
                 <button type="submit" class="btn btn-raised btn-raised btn-primary">
             <i class="fa fa-check-square-o"></i> ذخیره
         </button>
 </form>
+<?php }; ?>

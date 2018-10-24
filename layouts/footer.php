@@ -72,7 +72,7 @@
                             <a href="contact.php">تماس با ما</a>
                         </li>
                         <?php
-                        $result = $db->select("page","`type` = 'footer' LIMIT 2");
+                        $result = $db->select("page","`type` = 'footer' LIMIT 6");
                         foreach($result as $rowmenu)
                         {
                             ?>
@@ -129,7 +129,7 @@
                     </h4>
                     <?php
                     
-                    $results = $db->select("product");
+                    $results = $db->run("SELECT * FROM `product` LIMIT 2");
                      foreach($results as $row)
                      {
  
