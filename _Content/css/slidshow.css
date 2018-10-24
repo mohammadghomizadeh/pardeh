@@ -7,9 +7,11 @@
     width: 100%;
     color: #FFF;
 }
-
+.carousel{
+    top: -20px;
+}
 .carousel-btns {
-    margin-top: 350px;
+    margin-top: 350px !important;
 
 }
 
@@ -42,7 +44,7 @@
 
 /*CONTROL*/
 .carousel-control {
-    width: auto;
+    z-index: 999999999 !important;
 }
 
 .carousel-control .icon-prev,
@@ -52,7 +54,7 @@
   position: absolute;
   top: 47%;
   right: 0;
-  z-index: 5;
+  z-index: 999999999 !important;
   display: inline-block;
   background-color: #000;
   width: 38px;
@@ -63,7 +65,9 @@
 
 .carousel-control .icon-prev,
 .carousel-control .fa-chevron-left {
-  left: 0;
+    right:auto;
+  left: 40px !important;
+    z-index: 999999999 !important;
 }
 
 .carousel-indicators li {

@@ -126,7 +126,7 @@
                     <label for="file"> تصویر اصلی</label>
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
-                            <span class="input-group-text">بارگزاری</span>
+                            <span class="input-group-text">بارگذاری</span>
                         </div>
                         <div class="custom-file">
                             <input type="file" class="custom-file-input" id="product_image3" name="product_image3">

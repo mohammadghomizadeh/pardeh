@@ -17,7 +17,7 @@
                     <div class="collapse navbar-collapse menu--shylock" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav menu__list">
                             <li class="active menu__item menu__item--current">
-                                <a class="menu__link irsans16" href="index.html">خانه
+                                <a class="menu__link irsans16" href="index.php">خانه
                                     <span class="sr-only">(current)</span>
                                 </a>
                             </li>

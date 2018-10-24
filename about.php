@@ -28,18 +28,24 @@
 <div class="banner_bottom_agile_info">
     <div class="container">
         <div class="agile_ab_w3ls_info">
+            <?php
+                  $result = $db->run("SELECT * FROM `setting` WHERE `type` = 'aboutus' LIMIT 1");
+                 foreach($result as $row)
+                 {
+?>
             <div class="col-md-6 ab_pic_w3ls pull-left">
-                <img src="_Content/images/ab_pic.jpg" alt=" " class="img-responsive" />
+                <img src="cp/uploads/about/<?php echo $row['image'];?>" alt=" " class="img-responsive" />
             </div>
             <div class="col-md-6 ab_pic_w3ls_text_info">
                 <h5>از
                     <span> اریسه</span>
                     بیشتر بدانید
                 </h5>
-                <p class="text-justify">فروشگاه اینترنتی اریسه در زمستان سال ۱۳۹۴ با هدف توسعه و به وجود آوردن سبکی نوین در صنعت پوشاک و شیک پوشی در کشور به وجود آمد.</p>
-                <p class="text-justify">در ابتدا این تیم فعالیت خود را با برندهای معروف و معتبر خارجی آغاز نمود و سپس پس از مدتی به منظور حمایت از تولید ملی شروع به عقد قرار داد با صنایع تولید پوشاک داخلی نمود و تاکنون تنوع بسیار زیادی از برندهای مختلف پوشاک به صورت داخلی و خارجی برای مشتریان خود فراهم آورده است.</p>
+                <p class="text-justify"><?php echo $row['description'];?></p>
+               
             </div>
             <div class="clearfix"></div>
+                 <?php }; ?>
         </div>
 
     </div>

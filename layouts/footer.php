@@ -116,53 +116,22 @@
                     <h4>محصولات
                         <span>اخیر</span>
                     </h4>
+                    <?php
+                    
+                    $results = $db->select("product");
+                     foreach($results as $row)
+                     {
+ 
+                     ?>
                     <ul>
                         <li>
                             <a href="single.html">
-                                <img src="_Content/images/t1.jpg" alt=" " class="img-responsive" />
+                                <img src="cp/uploads/products/<?php echo $row['image1'];?>" alt=" " class="img-responsive" />
                             </a>
                         </li>
-                        <li>
-                            <a href="single.html">
-                                <img src="_Content/images/t2.jpg" alt=" " class="img-responsive" />
-                            </a>
-                        </li>
-                        <li>
-                            <a href="single.html">
-                                <img src="_Content/images/t3.jpg" alt=" " class="img-responsive" />
-                            </a>
-                        </li>
-                        <li>
-                            <a href="single.html">
-                                <img src="_Content/images/t4.jpg" alt=" " class="img-responsive" />
-                            </a>
-                        </li>
-                        <li>
-                            <a href="single.html">
-                                <img src="_Content/images/t1.jpg" alt=" " class="img-responsive" />
-                            </a>
-                        </li>
-                        <li>
-                            <a href="single.html">
-                                <img src="_Content/images/t2.jpg" alt=" " class="img-responsive" />
-                            </a>
-                        </li>
-                        <li>
-                            <a href="single.html">
-                                <img src="_Content/images/t3.jpg" alt=" " class="img-responsive" />
-                            </a>
-                        </li>
-                        <li>
-                            <a href="single.html">
-                                <img src="_Content/images/t2.jpg" alt=" " class="img-responsive" />
-                            </a>
-                        </li>
-                        <li>
-                            <a href="single.html">
-                                <img src="_Content/images/t4.jpg" alt=" " class="img-responsive" />
-                            </a>
-                        </li>
+                        
                     </ul>
+                     <?php }; ?>
                 </div>
                 <div class="clearfix"></div>
             </div>
