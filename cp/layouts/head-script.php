@@ -1,7 +1,6 @@
 <?php
-session_start();
-include ('config/db.php');
 
+include ('config/db.php');
 ?>
 <!DOCTYPE html>
 <html lang="fa" class="loading">

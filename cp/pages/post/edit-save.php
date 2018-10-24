@@ -13,8 +13,8 @@
     $result_editpost = $db->run("UPDATE `post` SET `image` = '$post_image1' WHERE `id` = '$editid'");
     }
 $result_editpost=$db->run("UPDATE `post` SET
-    `title`=>'$post_title',
-    `description`=>'$post_description',
+    `title`='$post_title',
+    `description`='$post_description',
     `type`='$post_type',
     `update_at`= '$ctime'
      WHERE `id` = '$editid'");

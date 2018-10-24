@@ -3,19 +3,20 @@
               <h3 class="box-title">ویرایش  درباره ما</h3>
             </div>
             <hr>
+            <?php
+                $result = $db->select("setting","`type` = 'aboutus'");
+                foreach($result as $row){
+                ?>
       <form method="POST" action="index.php?page=setting/about-us/save&id=<?php echo $row['id'];  ?>" enctype="multipart/form-data">
            
               </div>
                 <div class="form-control">
                 <label>متن درباره ما</label>
-                <?php
-                    $result = $db->run("SELECT * FROM `setting` WHERE `type` = 'aboutus' LIMIT 1");
-                    foreach($result as $row){
-                ?>
+               
                 <textarea id="aboutdescript" name="aboutdescript" rows="10" cols="80">
                 <?php echo $row['description'];?>
                 </textarea>
-                <!-- image3 -->
+             
         <div class="row">
             <div class="col-md-6">
                 <div class="form-group">
@@ -32,7 +33,7 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <img src="uploads/blank.png" id="image_about" height="100" width="150">
+            <img src="uploads/about/<?php echo $row['image']; ?>" id="image_about" height="100" width="150">
             </div>
             <script type="text/javascript">
                 function readURL1(input) {
@@ -50,10 +51,11 @@
                 });
             </script>
         </div>
-        <!-- EndImage3 -->
-                <?php }; ?>
+    
+               
                 </div>
                 <button type="submit" class="btn btn-raised btn-raised btn-primary">
             <i class="fa fa-check-square-o"></i> ذخیره
         </button>
 </form>
+<?php }; ?>

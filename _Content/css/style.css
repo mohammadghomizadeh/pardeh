@@ -364,7 +364,7 @@ i.fa.fa-shopping-bag.top_logo_agile_bag {
 .ban-top{
 	background:#000;
     padding: 0px 0;
-    height: 70px;
+    height: 50px;
 }
 .dropdown-menu.columns-3 {
     min-width: 700px;
@@ -392,7 +392,7 @@ i.fa.fa-shopping-bag.top_logo_agile_bag {
     margin-top: 20px !important;
 }
 .navbar-nav > li {
-    margin: 0 15px 0 0;
+    margin: -20px 15px 0 0;
 }
 .navbar-nav > li > a {
     padding: 26px 16px;
@@ -540,7 +540,7 @@ a.menu__link {
 }
 .box_1 {
     background: #2fdab8;
-    padding: 17px 22px;
+    padding: 5px;
     text-align: center;
 }
 .box_1 h3 {
@@ -1474,7 +1474,7 @@ button.w3view-cart {
     outline: none;
     border: none;
     background: #17c3a2;
-    width: 48px;
+    width: 52px;
     height: 43px;
     font-size: 24px;
     color: #000;
