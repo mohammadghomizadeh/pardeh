@@ -57,7 +57,7 @@
                     </h4>
                     <ul>
                         <li>
-                            <a href="index.html">صفحه اصلی</a>
+                            <a href="index.php">صفحه اصلی</a>
                         </li>
                         <li>
                             <a href="mens.html">پوشاک مردانه</a>
@@ -66,11 +66,22 @@
                             <a href="womens.html">پوشاک زنانه</a>
                         </li>
                         <li>
-                            <a href="about.html">درباره ما</a>
+                            <a href="about.php">درباره ما</a>
                         </li>
                         <li>
-                            <a href="contact.html">تماس با ما</a>
+                            <a href="contact.php">تماس با ما</a>
                         </li>
+                        <?php
+                        $result = $db->select("page","`type` = 'footer' LIMIT 2");
+                        foreach($result as $rowmenu)
+                        {
+                            ?>
+                            <li>
+                                <a href="page.php?id=<?php echo $rowmenu['id']; ?>">  <?php echo $rowmenu['title']; ?></a>
+                            </li>
+                        <?php
+                        }
+                        ?>
                     </ul>
                 </div>
                 <div class="col-md-5 sign-gd-two">

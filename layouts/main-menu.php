@@ -160,6 +160,17 @@
                             <li class=" menu__item">
                                 <a class="menu__link irsans16" href="contact.php">تماس با ما</a>
                             </li>
+                            <?php
+                            $result = $db->select("page","`type` = 'head' LIMIT 2");
+                            foreach($result as $rowmenu)
+                            {
+                                ?>
+                                <li class=" menu__item">
+                                    <a class="menu__link irsans16" href="page.php?id=<?php echo $rowmenu['id']; ?>"><?php echo $rowmenu['title']; ?></a>
+                                </li>
+                                <?php
+                            }
+                            ?>
                         </ul>
                     </div>
                 </div>

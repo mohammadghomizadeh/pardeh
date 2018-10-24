@@ -26,28 +26,28 @@
                             <span class="input-group-text">بارگذاری</span>
                         </div>
                         <div class="custom-file">
-                            <input type="file" class="custom-file-input" id="post_image1" name="post_image1">
+                            <input type="file" class="custom-file-input" id="post_image" name="post_image">
                             <label class="custom-file-label" for="post_image1">انتخاب تصویر محصول</label>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
-                <img src="uploads/blank.png" id="post_img1" height="100" width="150">
+                <img src="uploads/blank.png" id="post_img" height="100" width="150">
             </div>
             <script type="text/javascript">
-                function readURL1(input) {
+                function readURL(input) {
                     if (input.files && input.files[0]) {
                         var reader = new FileReader();
 
                         reader.onload = function (e) {
-                            $('#post_img1').attr('src', e.target.result);
+                            $('#post_img').attr('src', e.target.result);
                         }
                         reader.readAsDataURL(input.files[0]);
                     }
                 }
-                $("#post_image1").change(function(){
-                    readURL1(this);
+                $("#post_image").change(function(){
+                    readURL(this);
                 });
             </script>
         </div>

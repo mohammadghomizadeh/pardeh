@@ -7,11 +7,17 @@
 <?php include('layouts/main-menu.php'); ?>
 <!-- //Main-Menu -->
 <!-- Content -->
+<?php
+$pageid =$_GET['id'];
+$result = $db->select("page","`id` = '$pageid'");
+foreach($result as $rowpage)
+{
+   ?>
 
 <div class="page-head_agile_info_w3l">
     <div class="container">
-        <h3>تماس
-            <span> با ما</span>
+        <h3>
+            <?php echo $rowpage['title']; ?>
         </h3>
         <div class="services-breadcrumb">
             <div class="agile_inner_breadcrumb">
@@ -20,7 +26,7 @@
                         <a href="index.html">خانه</a>
                         <i>|</i>
                     </li>
-                    <li>تماس با ما</li>
+                    <li><?php echo $rowpage['title']; ?></li>
                 </ul>
             </div>
         </div>
@@ -31,13 +37,11 @@
         <div class="agile_ab_w3ls_info">
 
             <div class="col-md-12 ab_pic_w3ls_text_info">
-                <h5>از
-                    <span> اریسه</span>
-                    بیشتر بدانید
+                <h5><?php echo $rowpage['title']; ?>
                 </h5>
-                <p class="text-justify">تیم پرده سرای  با تجربه بالا در زمینه اجرای پروژه های پرده های سالن سینما و همایش.</p>
-                <p class="text-justify">بیمارستان ها,تالار های پذیرایی و رستوران ها,ادارجات و دانشگاه ها بهترین گزینه برای مشاوره و خرید برای مدیران مکان ها نام برده میباشد</p>
-            </div>
+
+                <?php echo $rowpage['content']; ?>
+           </div>
             <div class="clearfix"></div>
         </div>
 
@@ -45,8 +49,9 @@
 </div>
 
 
-
-
+<?php
+}
+?>
 
 
 <!--End-Content -->

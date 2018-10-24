@@ -10,6 +10,7 @@
                     <tr>
                         <th>ردیف</th>
                         <th>عنوان</th>
+                        <th>محل قرار گیری</th>
                         <th>ویرایش</th>
                         <th>حذف</th>
                     </tr>
@@ -24,7 +25,8 @@
                             ?>
                             <tr>
                                 <td><?php echo $i; ?></td>
-                                <td><?php echo $rowpage['title']; ?></td>
+                                <td><?php echo $rowpage['title']; ?>
+                                <td><?php echo $rowpage['type']; ?></td>
 
                                 <td>
 
