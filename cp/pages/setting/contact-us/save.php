@@ -12,7 +12,7 @@
                             $r = $db->run("UPDATE `setting` SET 
                             `address` = '$address',
                             `email` = '$email',
-                            `phone` = '$tell'
+                            `phone` = '$tell',
                             `map`='$map'
                               WHERE `id` = '$contact_id '");
                          }

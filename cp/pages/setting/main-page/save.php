@@ -4,11 +4,12 @@
                         $setting_id = $_GET['id'];
                         $sitetitle = $_POST['sitetitle'];
                         $sitedescription = $_POST['sitedescription'];
-                        $update = $date->date("Y-m-d", false, false);
+                        $category_type= $_POST['category_type'];
 
-                             $result = $db->run("UPDATE `setting` SET 
+                             $r= $db->run("UPDATE `setting` SET 
                             `title`='$sitetitle',
-                            `description` = '$sitedescription'
+                            `description` = '$sitedescription',
+                            `type`= '$category_type'
                               WHERE `id` = '$setting_id'");
                         }
                          ?>
