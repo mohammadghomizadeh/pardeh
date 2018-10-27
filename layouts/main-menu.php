@@ -50,31 +50,7 @@
 
                                             </ul>
                                         </div>
-                                        <div class="col-sm-3 multi-gd-img">
-                                            <ul class="multi-column-dropdown irsans14">
-                                                <li>
-                                                    <a href="mens.html">زیورآلات</a>
-                                                </li>
-                                                <li>
-                                                    <a href="mens.html">عینک آفتابی</a>
-                                                </li>
-                                                <li>
-                                                    <a href="mens.html">عطرها</a>
-                                                </li>
-                                                <li>
-                                                    <a href="mens.html">آرایشی و بهداشتی</a>
-                                                </li>
-                                                <li>
-                                                    <a href="mens.html">کمربند</a>
-                                                </li>
-                                                <li>
-                                                    <a href="mens.html">کراوات</a>
-                                                </li>
-                                                <li>
-                                                    <a href="mens.html">شالگردن</a>
-                                                </li>
-                                            </ul>
-                                        </div>
+
                                         <div class="clearfix"></div>
                                     </div>
                                 </ul>

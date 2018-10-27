@@ -5,10 +5,18 @@
         </h3>
         <div id="horizontalTab">
             <ul class="resp-tabs-list">
-                <li>مردانه</li>
-                <li>زنانه</li>
-                <li>کیف و کوله پشتی</li>
-                <li>کفش</li>
+                <?php
+                $resulttab = $db->select("category","`type` = 'product'");
+                foreach($resulttab as $rowtab)
+                {
+                    ?>
+                    <li><?php echo $rowtab['title']; ?></li>
+                <?php
+
+                }
+                ?>
+
+
             </ul>
             <div class="clearfix"></div>
             <div class="resp-tabs-container">

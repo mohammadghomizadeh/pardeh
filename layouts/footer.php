@@ -60,11 +60,9 @@
                             <a href="index.php">صفحه اصلی</a>
                         </li>
                         <li>
-                            <a href="mens.html">پوشاک مردانه</a>
+                            <a href="products.php">محصولات</a>
                         </li>
-                        <li>
-                            <a href="womens.html">پوشاک زنانه</a>
-                        </li>
+
                         <li>
                             <a href="about.php">درباره ما</a>
                         </li>
