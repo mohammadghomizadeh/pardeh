@@ -101,6 +101,7 @@
                         <li class=""><a href="index.php?page=setting/slideshow/list" class="menu-item">اسلاید شو </a>
                         <li class=""><a href="index.php?page=setting/about-us/edit" class="menu-item">درباره ما </a>
                         <li class=""><a href="index.php?page=setting/contact-us/edit" class="menu-item">تماس با ما</a>
+                        <li class=""><a href="index.php?page=setting/main-page/edit" class="menu-item">تنظیمات صفحه اصلی</a>
                     </ul>
                 </li>
                 <!-------------------end-ORDER------------------>
