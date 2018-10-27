@@ -1,6 +1,7 @@
 <?php
 include('class.db.php');
 include('jdatetime.class.php');
+
 $HOST = "localhost";
 $USERNAME = "root";
 $PASSWORD = "";
@@ -39,4 +40,12 @@ function getRealUserIp(){
         default : return $_SERVER['REMOTE_ADDR'];
     }
 }
+include('PHPMailer.php');
+include('SMTP.php');
+$mail= new PHPMailer();
+$mail->IsSMTP();
+$mail->Hostname = "smtp.gmail.com";
+$mail->SMTPAuth = true;
+$mail->Username= "m.ghomizadeh88@gmail.com";
+$mail->Password= "09363648813";
 ?>

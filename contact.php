@@ -150,28 +150,28 @@
                     <h4 class="white-w3ls">تماس با
                         <span>ما</span>
                     </h4>
-                    <form action="#" method="post">
+                    <form action="check.php" method="post">
                         <div class="styled-input agile-styled-input-top">
-                            <input type="text" name="Name" required="">
+                            <input type="text" name="txtname" id="txtname" required="">
                             <label>نام</label>
                             <span></span>
                         </div>
                         <div class="styled-input">
-                            <input type="email" name="Email" required="">
+                            <input type="email" name="txtemail" id="txtemail" required="">
                             <label>ایمیل</label>
                             <span></span>
                         </div>
                         <div class="styled-input">
-                            <input type="text" name="Subject" required="">
+                            <input type="text" name="txtsubject" id="txtsubject" required="">
                             <label>موضوع</label>
                             <span></span>
                         </div>
                         <div class="styled-input">
-                            <textarea name="Message" required=""></textarea>
+                            <textarea name="txtmsg" id="txtmsg" required=""></textarea>
                             <label>متن</label>
                             <span></span>
                         </div>
-                        <input type="submit" value="ارسال">
+                        <input type="submit" id="submitmail" name="submitmail" value="ارسال">
                     </form>
                 </div>
             </div>
