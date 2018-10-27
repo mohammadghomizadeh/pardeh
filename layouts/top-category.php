@@ -1,27 +1,40 @@
 <div class="banner_bottom_agile_info">
     <div class="container">
         <div class="banner_bottom_agile_info_inner_w3ls">
+                <?php
+                $result = $db->select("category","`type` = 'product' LIMIT 1");
+                foreach($result as $rows){
+                ?>
             <div class="col-md-6 wthree_banner_bottom_grid_three_left1 grid">
                 <figure class="effect-roxy">
-                    <img src="_Content/images/bottom1.jpg" alt=" " class="img-responsive" />
+                    <img src="cp/uploads/categorys/<?php echo $rows['image']; ?>" alt="<?php echo $rows['title']; ?>" class="img-responsive" />
                     <figcaption>
                         <h3>
-                            <span>ست</span> بپوشیم</h3>
-                        <p>از مجموعه ست پوشاک دیدن فرمایید</p>
+                        <?php echo $rows['title']; ?>
+                         </h3>
+                        <p>از مجموعه ما دیدن فرمایید</p>
                     </figcaption>
                 </figure>
             </div>
+            <?php }; ?>
+            <?php
+                $result = $db->select("category","`type` = 'product' LIMIT 1");
+                foreach($result as $rows){
+                ?>
             <div class="col-md-6 wthree_banner_bottom_grid_three_left1 grid">
                 <figure class="effect-roxy">
-                    <img src="_Content/images/bottom2.jpg" alt=" " class="img-responsive" />
+                    <img src="cp/uploads/categorys/<?php echo $rows['image']; ?>" alt=" " class="img-responsive" />
                     <figcaption>
                         <h3>
-                            <span>‌کیف‌های</span> برند</h3>
+                        <?php echo $rows['title']; ?>
+                        </h3>
                         <p>جهت مشاهده کلیک نمایید</p>
                     </figcaption>
                 </figure>
             </div>
+                <?php }; ?>
             <div class="clearfix"></div>
         </div>
+                
     </div>
 </div>
