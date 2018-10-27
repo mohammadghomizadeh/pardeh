@@ -29,26 +29,23 @@ if(isset($_POST['login']))
     }
   }
 
-  if(isset($_POST['submitmail']))
+ if(isset($_POST['submitmail']))
   {
-      include ('cp/config/db.php');
+
+$to = "info.asiaweb@gmail.com";
+$subject = "My subject";
+$txt = "Hello world!";
+$headers = "From: webmaster@example.com" . "\r\n" .
+"CC: somebodyelse@example.com";
+
+mail($to,$subject,$txt,$headers);
+
+
       $name = $_POST['txtname'];
       $email = $_POST['txtemail'];
       $subject = $_POST['txtsubject'];
       $msg = $_POST['txtmsg'];
 
-      $mail->SetFrom($from, $name);
-      $mail->AddReplyTo($from, $name);
-
-      $mail->AddAddress('info.asiaweb@gmail.com', "Your Name");
-      $mail->Subject = $subject;
-      $mail->IsHTML(true);
-      $body = '<html><body>';
-      $body .= '<p style="direction:rtl;font-family:tahoma;">'.$msg.'</p>';
-      $body .= "</body></html>";
-
-      $mail->MsgHTML($body);
-      $mail->AltBody= $msg;
 
       if(!$mail->Send()) {
           echo "خطا:پیام شما ارسال نشد » " . $mail->ErrorInfo;

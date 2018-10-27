@@ -4,12 +4,12 @@
             </div>
             <hr>
             <hr>
-          
+<?php
+$result = $db->select("setting","`type` = 'main-page' LIMIT 4");
+foreach($result as $row){
+?>
             <form method="POST" action="index.php?page=setting/main-page/save&id=<?php echo $row['id']; ?>" enctype="multipart/form-data">
-            <?php
-                $result = $db->select("setting","`type` = 'main-page' LIMIT 4");
-                foreach($result as $row){
-                ?>
+
                 <div class="form-group">
                     <label>سرویس ها</label>
                     <input type="text" class="form-control"  name="sitetitle" id="sitetitle" value="<?php echo $row['title']; ?>">
@@ -71,7 +71,7 @@
                 $result = $db->select("category","`type` = 'product'");
                 foreach($result as $rows){
                 ?>
-                        <option value="product"><?php echo $rows['title']; ?></option>
+                        <option value="<?php echo $rows['status']; ?>"><?php echo $rows['title']; ?></option>
                         <?php };?>
                     </select>
                 </div>
