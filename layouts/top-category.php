@@ -2,7 +2,7 @@
     <div class="container">
         <div class="banner_bottom_agile_info_inner_w3ls">
                 <?php
-                $result = $db->select("category","`type` = 'product' LIMIT 1");
+                $result = $db->select("category","`type` = 'product' LIMIT 2");
                 foreach($result as $rows){
                 ?>
             <div class="col-md-6 wthree_banner_bottom_grid_three_left1 grid">
@@ -17,22 +17,7 @@
                 </figure>
             </div>
             <?php }; ?>
-            <?php
-                $result = $db->select("category","`type` = 'product' LIMIT 1");
-                foreach($result as $rows){
-                ?>
-            <div class="col-md-6 wthree_banner_bottom_grid_three_left1 grid">
-                <figure class="effect-roxy">
-                    <img src="cp/uploads/categorys/<?php echo $rows['image']; ?>" alt=" " class="img-responsive" />
-                    <figcaption>
-                        <h3>
-                        <?php echo $rows['title']; ?>
-                        </h3>
-                        <p>جهت مشاهده کلیک نمایید</p>
-                    </figcaption>
-                </figure>
-            </div>
-                <?php }; ?>
+         
             <div class="clearfix"></div>
         </div>
                 

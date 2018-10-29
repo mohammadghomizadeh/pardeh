@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 </br></br></br></br></br>
 <div class="box-header with-border">
               <h3 class="box-title">تنظیمات صفحه اصلی</h3>
@@ -11,7 +11,7 @@ foreach($result as $row){
 ?>
             <form method="POST" action="index.php?page=setting/main-page/save&id=<?php echo $row['id']; ?>" enctype="multipart/form-data">
 
-=======
+
 </br>
 </br>
 
@@ -41,7 +41,7 @@ foreach($result as $row){
                 $result = $db->select("setting","`type` = 'main-page' LIMIT 4");
                 foreach($result as $row){
                 ?>
->>>>>>> 507d44e3a856057ec0e100bb31304838bff09e28
+
                 <div class="form-group">
                     <label>سرویس ها</label>
                     <input type="text" class="form-control"  name="sitetitle" id="sitetitle" value="<?php echo $row['title']; ?>">
@@ -72,7 +72,7 @@ foreach($result as $row){
     $result = $db->select("category","`type` = 'product'");
     foreach($result as $rows){
     ?>
-            <option value="product"><?php echo $rows['title']; ?></option>
+            <option value="<?php echo $rows['title']; ?>"><?php echo $rows['title']; ?></option>
             <?php };?>
         </select>
     </div>
@@ -87,7 +87,7 @@ foreach($result as $row){
     $result = $db->select("category","`type` = 'product'");
     foreach($result as $rows){
     ?>
-            <option value="product"><?php echo $rows['title']; ?></option>
+            <option value="<?php echo $rows['title']; ?>"><?php echo $rows['title']; ?></option>
             <?php };?>
         </select>
     </div>
@@ -111,14 +111,13 @@ foreach($result as $row){
                 $result = $db->select("category","`type` = 'product'");
                 foreach($result as $rows){
                 ?>
-<<<<<<< HEAD
+
                         <option value="<?php echo $rows['status']; ?>"><?php echo $rows['title']; ?></option>
                         <?php };?>
-=======
-                        <option value="product"><?php echo $rows['title']; ?></option>
+
+                        <option value="<?php echo $rows['title']; ?>"><?php echo $rows['title']; ?></option>
 
                 <?php };?>
->>>>>>> 507d44e3a856057ec0e100bb31304838bff09e28
                     </select>
                 </div>
                 <div class="form-group">
@@ -132,7 +131,7 @@ foreach($result as $row){
                 $result = $db->select("category","`type` = 'product'");
                 foreach($result as $rows){
                 ?>
-                        <option value="product"><?php echo $rows['title']; ?></option>
+                        <option value="<?php echo $rows['title']; ?>"><?php echo $rows['title']; ?></option>
                         <?php };?>
                     </select>
                 </div>
@@ -147,7 +146,7 @@ foreach($result as $row){
                 $result = $db->select("category","`type` = 'product'");
                 foreach($result as $rows){
                 ?>
-                        <option value="product"><?php echo $rows['title']; ?></option>
+                        <option value="<?php echo $rows['title']; ?>"><?php echo $rows['title']; ?></option>
                         <?php };?>
                     </select>
                 </div>

@@ -22,25 +22,30 @@
             <div class="resp-tabs-container">
                 <!--/tab_one-->
                 <div class="tab1">
+                <?php
+                $resulttab = $db->select("product");
+                foreach($resulttab as $rowproduct)
+                {
+                    ?>
                     <div class="col-md-3 product-men">
                         <div class="men-pro-item simpleCart_shelfItem">
                             <div class="men-thumb-item">
-                                <img src="_Content/images/m1.jpg" alt="" class="pro-image-front">
-                                <img src="_Content/images/m1.jpg" alt="" class="pro-image-back">
+                                <img src="cp/uploads/products/<?php echo $rowproduct['image1'];?>" alt="" class="pro-image-front">
+                                <img src="cp/uploads/products/<?php echo $rowproduct['image2'];?>" alt="" class="pro-image-back">
                                 <div class="men-cart-pro">
                                     <div class="inner-men-cart-pro">
-                                        <a href="single.html" class="link-product-add-cart">مشاهده محصول</a>
+                                        <a href="product-single.php?id=<?php echo $rowproduct['id'];?>" class="link-product-add-cart">مشاهده محصول</a>
                                     </div>
                                 </div>
                                 <span class="product-new-top">جدید</span>
                             </div>
                             <div class="item-info-product ">
                                 <h4>
-                                    <a href="single.html">پیراهن رسمی مردانه</a>
+                                    <a href="product-single.php?id=<?php echo $rowproduct['id'];?>"><?php echo $rowproduct['title'];?></a>
                                 </h4>
                                 <div class="info-product-price">
-                                    <span class="item_price">۴۸۰۰۰ تومان</span>
-                                    <del>۶۵۰۰۰</del>
+                                    <span class="item_price"><?php echo $rowproduct['price'];?></span>
+                                    <del><?php echo $rowproduct['price'];?></del>
                                 </div>
                                 <div class="snipcart-details hvr-outline-out">
                                     <form action="#" method="post">
@@ -50,206 +55,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 product-men">
-                        <div class="men-pro-item simpleCart_shelfItem">
-                            <div class="men-thumb-item">
-                                <img src="_Content/images/m2.jpg" alt="" class="pro-image-front">
-                                <img src="_Content/images/m2.jpg" alt="" class="pro-image-back">
-                                <div class="men-cart-pro">
-                                    <div class="inner-men-cart-pro">
-                                        <a href="single.html" class="link-product-add-cart">مشاهده محصول</a>
-                                    </div>
-                                </div>
-                                <span class="product-new-top">جدید</span>
-                            </div>
-                            <div class="item-info-product ">
-                                <h4>
-                                    <a href="single.html">سوئیشرت آستین بلند گبی</a>
-                                </h4>
-                                <div class="info-product-price">
-                                    <span class="item_price">۱۱۸۰۰۰ تومان</span>
-                                    <del>۱۸۰۰۰۰</del>
-                                </div>
-                                <div class="snipcart-details hvr-outline-out">
-                                    <form action="#" method="post">
-                                        <input type="submit" name="submit" value="افزودن به سبد خرید" class="button" />
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 product-men">
-                        <div class="men-pro-item simpleCart_shelfItem">
-                            <div class="men-thumb-item">
-                                <img src="_Content/images/m3.jpg" alt="" class="pro-image-front">
-                                <img src="_Content/images/m3.jpg" alt="" class="pro-image-back">
-                                <div class="men-cart-pro">
-                                    <div class="inner-men-cart-pro">
-                                        <a href="single.html" class="link-product-add-cart">مشاهده محصول</a>
-                                    </div>
-                                </div>
-                                <span class="product-new-top">جدید</span>
-                            </div>
-                            <div class="item-info-product ">
-                                <h4>
-                                    <a href="single.html">شلوار ورزشی نایک</a>
-                                </h4>
-                                <div class="info-product-price">
-                                    <span class="item_price">۲۳۰۰۰۰ تومان</span>
-                                    <del>۲۸۰۰۰۰</del>
-                                </div>
-                                <div class="snipcart-details hvr-outline-out">
-                                    <form action="#" method="post">
-                                        <input type="submit" name="submit" value="افزودن به سبد خرید" class="button" />
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 product-men">
-                        <div class="men-pro-item simpleCart_shelfItem">
-                            <div class="men-thumb-item">
-                                <img src="_Content/images/m4.jpg" alt="" class="pro-image-front">
-                                <img src="_Content/images/m4.jpg" alt="" class="pro-image-back">
-                                <div class="men-cart-pro">
-                                    <div class="inner-men-cart-pro">
-                                        <a href="single.html" class="link-product-add-cart">مشاهده محصول</a>
-                                    </div>
-                                </div>
-                                <span class="product-new-top">جدید</span>
-
-                            </div>
-                            <div class="item-info-product ">
-                                <h4>
-                                    <a href="single.html">تیشرت آستین بلند یقه گرد</a>
-                                </h4>
-                                <div class="info-product-price">
-                                    <span class="item_price">۷۰۰۰۰ تومان</span>
-                                    <del>۱۳۰۰۰۰</del>
-                                </div>
-                                <div class="snipcart-details hvr-outline-out">
-                                    <form action="#" method="post">
-                                        <input type="submit" name="submit" value="افزودن به سبد خرید" class="button" />
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 product-men">
-                        <div class="men-pro-item simpleCart_shelfItem">
-                            <div class="men-thumb-item">
-                                <img src="_Content/images/m5.jpg" alt="" class="pro-image-front">
-                                <img src="_Content/images/m5.jpg" alt="" class="pro-image-back">
-                                <div class="men-cart-pro">
-                                    <div class="inner-men-cart-pro">
-                                        <a href="single.html" class="link-product-add-cart">مشاهده محصول</a>
-                                    </div>
-                                </div>
-                                <span class="product-new-top">جدید</span>
-
-                            </div>
-                            <div class="item-info-product ">
-                                <h4>
-                                    <a href="single.html">شلوار جین کشی</a>
-                                </h4>
-                                <div class="info-product-price">
-                                    <span class="item_price">۹۰۰۰۰ تومان</span>
-                                    <del>۱۳۰۰۰۰</del>
-                                </div>
-                                <div class="snipcart-details hvr-outline-out">
-                                    <form action="#" method="post">
-                                        <input type="submit" name="submit" value="افزودن به سبد خرید" class="button" />
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 product-men">
-                        <div class="men-pro-item simpleCart_shelfItem">
-                            <div class="men-thumb-item">
-                                <img src="_Content/images/m7.jpg" alt="" class="pro-image-front">
-                                <img src="_Content/images/m7.jpg" alt="" class="pro-image-back">
-                                <div class="men-cart-pro">
-                                    <div class="inner-men-cart-pro">
-                                        <a href="single.html" class="link-product-add-cart">مشاهده محصول</a>
-                                    </div>
-                                </div>
-                                <span class="product-new-top">جدید</span>
-                            </div>
-                            <div class="item-info-product ">
-                                <h4>
-                                    <a href="single.html">ساعت مچی کاسیو</a>
-                                </h4>
-                                <div class="info-product-price">
-                                    <span class="item_price">۳۴۰۰۰۰ تومان</span>
-                                    <del>۳۹۰۰۰۰</del>
-                                </div>
-                                <div class="snipcart-details hvr-outline-out">
-                                    <form action="#" method="post">
-                                        <input type="submit" name="submit" value="افزودن به سبد خرید" class="button" />
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 product-men">
-                        <div class="men-pro-item simpleCart_shelfItem">
-                            <div class="men-thumb-item">
-                                <img src="_Content/images/m6.jpg" alt="" class="pro-image-front">
-                                <img src="_Content/images/m6.jpg" alt="" class="pro-image-back">
-                                <div class="men-cart-pro">
-                                    <div class="inner-men-cart-pro">
-                                        <a href="single.html" class="link-product-add-cart">مشاهده محصول</a>
-                                    </div>
-                                </div>
-                                <span class="product-new-top">جدید</span>
-
-                            </div>
-                            <div class="item-info-product ">
-                                <h4>
-                                    <a href="single.html">کمربند چرم طبیعی</a>
-                                </h4>
-                                <div class="info-product-price">
-                                    <span class="item_price">۶۵۰۰۰ تومان</span>
-                                    <del>۹۰۰۰۰</del>
-                                </div>
-                                <div class="snipcart-details hvr-outline-out">
-                                    <form action="#" method="post">
-                                        <input type="submit" name="submit" value="افزودن به سبد خرید" class="button" />
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 product-men">
-                        <div class="men-pro-item simpleCart_shelfItem">
-                            <div class="men-thumb-item">
-                                <img src="_Content/images/m8.jpg" alt="" class="pro-image-front">
-                                <img src="_Content/images/m8.jpg" alt="" class="pro-image-back">
-                                <div class="men-cart-pro">
-                                    <div class="inner-men-cart-pro">
-                                        <a href="single.html" class="link-product-add-cart">مشاهده محصول</a>
-                                    </div>
-                                </div>
-                                <span class="product-new-top">جدید</span>
-
-                            </div>
-                            <div class="item-info-product ">
-                                <h4>
-                                    <a href="single.html">کت اسپرت ایتالیایی</a>
-                                </h4>
-                                <div class="info-product-price">
-                                    <span class="item_price">۴۵۰۰۰۰ تومان</span>
-                                    <del>۵۰۰۰۰۰</del>
-                                </div>
-                                <div class="snipcart-details hvr-outline-out">
-                                    <form action="#" method="post">
-                                        <input type="submit" name="submit" value="افزودن به سبد خرید" class="button" />
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <?php }; ?>
+               
+                   
+                   
                     <div class="clearfix"></div>
                 </div>
                 <!--//tab_one-->

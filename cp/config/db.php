@@ -41,8 +41,4 @@ function getRealUserIp(){
     }
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 507d44e3a856057ec0e100bb31304838bff09e28
 ?>

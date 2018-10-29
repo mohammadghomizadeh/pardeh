@@ -8,6 +8,7 @@
                         $headerscript = $_POST['headerscript'];
                         $footerscript = $_POST['footerscript'];
                         $sitedescription = $_POST['sitedescription'];
+                        $siteaddress=$_POST['siteaddress'];
                         $update = $date->date("Y-m-d", false, false);
                        
                          if(!empty($sitelogo) && !empty($siteicon))
@@ -26,7 +27,8 @@
                             `description` = '$sitedescription',
                             `update_at` = '$update',
                             `headscript`='$headerscript',
-                            `footerscript`='$footerscript'
+                            `footerscript`='$footerscript',
+                            `address`='$siteaddress'
                               WHERE `id` = '$setting_id'");
                          
                         }
@@ -35,7 +37,8 @@
                             `description` = '$sitedescription',
                             `update_at` = '$update',
                             `headscript`='$headerscript',
-                            `footerscript`='$footerscript'
+                            `footerscript`='$footerscript',
+                            `address`='$siteaddress'
                               WHERE `id` = '$setting_id '");
                         }
                          ?>

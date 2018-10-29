@@ -29,7 +29,7 @@
                                     <div class="agile_inner_drop_nav_info">
                                         <div class="col-sm-6 multi-gd-img1 multi-gd-text ">
                                             <a href="mens.html">
-                                                <img src="_Content/images/top2.jpg" alt=" " />
+                                                <img src="_Content/images/aaa.png" alt=" " />
                                             </a>
                                         </div>
                                         <div class="col-sm-3 multi-gd-img">

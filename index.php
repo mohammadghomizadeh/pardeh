@@ -19,8 +19,10 @@
     <!-- banner-bootom-w3-agileits -->
     <?php include('layouts/main-takhfif.php'); ?>
     <!--takhfif-category-->
-    <?php// include('layouts/takhfif-category.php'); ?>
-    <!--End-takhfif-category-->
+
+    <!--End-takhfif-category
+    -->
+
     <!-- /Product-Tab-New -->
     <?php include('layouts/product-tab.php'); ?>
     <!-- End-Product-Tab-New -->

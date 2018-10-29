@@ -2,8 +2,15 @@
     <div class="footer_agile_inner_info_w3l">
         <div class="col-md-3 footer-left">
             <h2>
-                <a href="index.html">
-                    <span>E</span>rise Shop</a>
+            <?php
+                  $result = $db->select("setting","`type` = 'setting'");
+                 foreach($result as $row)
+                 {
+?>
+                <a href="index.php">
+                <img src="cp/uploads/logo/<?php echo $row['logo'];?>"  alt="<?php echo $row['title'];?> ">
+                <?php }; ?>
+
             </h2>
             <p>با کلیک بر روی نمادهای زیر، ما را در شبکه‌های اجتماعی همراهی کنید.</p>
             <ul class="social-nav model-3d-0 footer-social w3_agile_social two">
@@ -82,6 +89,11 @@
                         ?>
                     </ul>
                 </div>
+                <?php
+                        $result = $db->select("setting","`type` = 'contactus'");
+                        foreach($result as $rowcontact)
+                        {
+                            ?>
                 <div class="col-md-5 sign-gd-two">
                     <h4>اطلاعات
                         <span>تماس</span>
@@ -93,7 +105,7 @@
                             </div>
                             <div class="w3-address-right">
                                 <h6>شماره تماس</h6>
-                                <p>۰۲۱۲۳۴۵۶۷۸۹</p>
+                                <p><?php echo $rowcontact['phone']; ?></p>
                             </div>
                             <div class="clearfix"> </div>
                         </div>
@@ -104,7 +116,7 @@
                             <div class="w3-address-right">
                                 <h6>آدرس ایمیل</h6>
                                 <p>Email :
-                                    <a href="mailto:example@email.com"> mail@example.com</a>
+                                    <a href="<?php echo $rowcontact['email']; ?>"><?php echo $rowcontact['email']; ?></a>
                                 </p>
                             </div>
                             <div class="clearfix"> </div>
@@ -115,12 +127,13 @@
                             </div>
                             <div class="w3-address-right">
                                 <h6>آدرس</h6>
-                                <p>تهران - خیابان نیلوفر</p>
+                                <p><?php echo $rowcontact['address']; ?></p>
                             </div>
                             <div class="clearfix"> </div>
                         </div>
                     </div>
                 </div>
+                        <?php }; ?>
                 <div class="col-md-3 sign-gd flickr-post">
                     <h4>محصولات
                         <span>اخیر</span>
@@ -159,12 +172,17 @@
 
             <div class="clearfix"></div>
         </div>
-        <p class="copy-right">فروشگاه اینترنتی اریسه | طراحی و برنامه نویسی
-            <a target="_blank" href="https://www.rtl-theme.com/author/hosein.abedi/">وب ویت</a>
+        <?php
+                $result = $db->select("setting","`type` = 'setting'");
+                foreach($result as $rowcopy){
+                ?>
+        <p class="copy-right">
+        <?php echo $rowcopy['address'];?>
         </p>
-        <p class="slogan">ساخته شده با
-            <i class="fa fa-heart" style="color:red;"></i>
+        <p class="slogan">
+        <?php echo $rowcopy['address'];?>
         </p>
+                 <?php }; ?>
     </div>
 </div>
 <!-- //footer -->

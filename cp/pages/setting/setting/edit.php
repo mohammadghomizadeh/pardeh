@@ -18,6 +18,10 @@
     <label>توضیحات سایت</label>
     <input type="text" class="form-control"  name="sitedescription" id="sitedescription" value="<?php echo $row['description']; ?>">
 </div>
+<div class="form-group">
+    <label>متن کپی رایت</label>
+    <input type="text" class="form-control"  name="siteaddress" id="siteaddress" value="<?php echo $row['address'];?>">
+</div>
 
 <div class="form-group">
     <label>لوگوی سایت</label>
