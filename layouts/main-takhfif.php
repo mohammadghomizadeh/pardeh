@@ -14,10 +14,10 @@
                     <figure class="effect-roxy">
                         <img src="cp/uploads/categorys/<?php echo $rows['image']; ?>" alt=" " class="img-responsive" />
                         <figcaption>
-                            <h3>مجموعه
-                                <span>زنانه</span>
+                            <h3>
+                            <?php echo $rows['title']; ?> 
                             </h3>
-                            <p>تا ۵۰٪ تخفیف</p>
+                           
                         </figcaption>
                     </figure>
                 </div>
@@ -34,10 +34,10 @@
                     <figure class="effect-roxy">
                         <img src="cp/uploads/categorys/<?php echo $rows['image']; ?>" alt=" " class="img-responsive" />
                         <figcaption>
-                            <h3>ست
-                                <span>لباس</span>
+                            <h3>
+                            <?php echo $rows['title']; ?>
                             </h3>
-                            <p>تا ۵۵٪ تخفیف</p>
+                           
                         </figcaption>
                     </figure>
                 </div>
@@ -52,10 +52,9 @@
                     <figure class="effect-roxy">
                         <img src="cp/uploads/categorys/<?php echo $rows['image']; ?>" alt=" " class="img-responsive">
                         <figcaption>
-                            <h3>ویژه
-                                <span>کفش</span>
+                            <h3>
+                            <?php echo $rows['title']; ?>
                             </h3>
-                            <p>تا ۶۵٪ تخفیف</p>
                         </figcaption>
                     </figure>
                 </div>
